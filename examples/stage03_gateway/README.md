@@ -1,0 +1,16 @@
+# Stage 3, Lesson 3 — Mock Tools and Action Gateway
+
+This is the complete single-file Python 3.12 example used by this lesson. It uses exactly `read_ticket`, `search_kb`, `draft_message`, `send_message`, `update_record` and `write_memory`.
+
+From this directory, run:
+
+```sh
+python3 lab.py
+python3 lab.py > evidence.jsonl
+```
+
+Run these separately: the first displays the four records; the second writes a new local copy from a fresh process. The first pair links `call-001` to the permitted synthetic T-104 read. The second links `call-002` to a denied send request. The denied call never invokes `send_message`. The fixture subject is Access request, and its status is open.
+
+The six handlers are local stubs. Send, update and memory handlers return simulation markers; they do not deliver a message, change TICKETS or persist memory. The example's actor strings and permission policy are illustrative: authentication, production failure handling, network integration and durable audit storage are absent. `gateway` accepts an argument dictionary; it is not a general untrusted-input parser. The earlier `eca_lab` package is a separate proposal-replay foundation, not this exact lesson implementation.
+
+Submit your own observed output from your authorized run. These instructions and the diagrams do not prefill your worksheet with an external-system result. Do not publish private evidence.

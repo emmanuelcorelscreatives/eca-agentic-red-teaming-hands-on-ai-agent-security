@@ -37,3 +37,10 @@ The original course contains proposed examples and explicitly unobserved states.
 Use the lesson-specific worksheet to define the legitimate task, attacker-controlled surface, invariant, oracle, paired control, run identity and review criteria. Add adapters only inside an isolated, authorized environment; preserve source provenance, principal identity and action-gateway decisions. Existing scoring criteria should be versioned and reused. Do not substitute the demo policy or fabricate a metric for a course exercise that requires different criteria.
 
 See [the trace format](docs/trace-format.md) and [coherence map](docs/coherence-map.md). Generated `evidence/` is ignored so local observations and potentially sensitive adapter outputs are not published accidentally.
+
+## Lesson-specific runnable examples
+
+- [Stage 3, Lesson 3: six local stubs and two linked gateway calls](examples/stage03_gateway/README.md). This exact lesson uses `update_record`; the earlier `eca_lab` replay foundation is a separate example.
+- [Stage 20, Lesson 4: record-security scoring with saved intermediate changes](examples/stage20_records/README.md). This implements only the records check, with explicit trusted-fixture assumptions and separate tests.
+
+These additions preserve the 119 original lesson guides and blank learner worksheets.

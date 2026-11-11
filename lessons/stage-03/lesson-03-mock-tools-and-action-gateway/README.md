@@ -19,3 +19,7 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+## Matching runnable lesson example
+
+See the [lesson-specific code and its scope](../../../examples/stage03_gateway/README.md). Run it with synthetic inputs and retain your own observed evidence; the learner worksheet remains blank.
