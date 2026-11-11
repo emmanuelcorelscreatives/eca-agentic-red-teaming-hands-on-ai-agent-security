@@ -1,0 +1,10 @@
+
+
+    # PROPOSED COMMANDS — NOT EXECUTED
+
+    python3 runner/runner.py \
+        --manifest fixtures/v1/manifest.json
+
+    python3 runner/runner.py \
+        --manifest fixtures/v1/manifest.json \
+        --case HD-LAB-INJECT-01
