@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="white" />
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#17212b" stroke-width="1.5" /></marker></defs>
+<text x="150" y="120" font-family="DejaVu Sans" font-size="31" font-weight="bold" fill="#17212b">Illustrative worksheet — not a captured run.</text>
+<text x="150" y="171" font-family="DejaVu Sans" font-size="27" font-weight="bold" fill="#17212b">Run ID: LAB-RUN-042</text>
+<rect x="150" y="216" width="1236" height="496" fill="white" stroke="#1559ab" stroke-width="2" />
+<rect x="150" y="216" width="1236" height="90" fill="#e8f1fc" stroke="#1559ab" stroke-width="2" />
+<text x="158" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Step</text>
+<line x1="220" y1="216" x2="220" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="228" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Role</text>
+<line x1="340" y1="216" x2="340" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="348" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Source trust</text>
+<line x1="510" y1="216" x2="510" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="518" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Proposal / arguments</text>
+<line x1="770" y1="216" x2="770" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="778" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Policy decision</text>
+<line x1="940" y1="216" x2="940" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="948" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Execution</text>
+<line x1="1100" y1="216" x2="1100" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="1108" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Result</text>
+<line x1="1240" y1="216" x2="1240" y2="712" stroke="#1559ab" stroke-width="2" />
+<text x="1248" y="246" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">State delta</text>
+<line x1="150" y1="306" x2="1386" y2="306" stroke="#1559ab" stroke-width="2" />
+<text x="158" y="335" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">1</text>
+<text x="228" y="335" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">user</text>
+<text x="348" y="335" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Direct lab</text>
+<text x="348" y="360" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">request</text>
+<text x="518" y="335" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Read the case LAB-042</text>
+<line x1="150" y1="407" x2="1386" y2="407" stroke="#1559ab" stroke-width="2" />
+<text x="158" y="436" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">2</text>
+<text x="228" y="436" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">assistant</text>
+<text x="518" y="436" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Proposed: read-only</text>
+<text x="518" y="461" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">lookup; case_ref: LAB-042</text>
+<line x1="150" y1="508" x2="1386" y2="508" stroke="#1559ab" stroke-width="2" />
+<text x="158" y="537" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">3</text>
+<text x="518" y="537" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">case_ref: LAB-042</text>
+<text x="778" y="537" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Illustrative</text>
+<text x="778" y="562" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">decision:</text>
+<text x="778" y="587" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">permitted</text>
+<line x1="150" y1="609" x2="1386" y2="609" stroke="#1559ab" stroke-width="2" />
+<text x="158" y="638" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">4</text>
+<text x="228" y="638" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">tool</text>
+<text x="518" y="638" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">case_ref: LAB-042</text>
+<text x="948" y="638" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">lookup invoked</text>
+<path d="M 750 496 L 850 496 L 850 516" fill="none" stroke="#17212b" stroke-width="2" marker-end="url(#arrow)" />
+<path d="M 925 588 L 925 601 L 1020 601 L 1020 618" fill="none" stroke="#17212b" stroke-width="2" marker-end="url(#arrow)" />
+<rect x="150" y="734" width="1236" height="38" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="166" y="761" font-family="DejaVu Sans" font-size="21" font-weight="bold" fill="#17212b">Termination reason:</text>
+</svg>
