@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="white" />
+<defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L5,3 L0,6" fill="none" stroke="#17212b" stroke-width="1.5" /></marker></defs>
+<text x="150" y="103" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#17212b">Illustrative worksheet — not a captured run.</text>
+<text x="150" y="138" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#17212b">Constructed example: LAB-RUN-042</text>
+<text x="150" y="180" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#17212b">illustrative, not captured evidence</text>
+<text x="780" y="138" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#17212b">My run — Run ID: ______________</text>
+<rect x="780" y="147" width="606" height="43" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="165" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">My run: tool response enters next model input at step ____;</text>
+<text x="790" y="186" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">evidence ____.</text>
+<rect x="150" y="196" width="606" height="397" fill="white" stroke="#1559ab" stroke-width="2" />
+<rect x="150" y="196" width="606" height="28" fill="#e8f1fc" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="217" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Step / event</text>
+<text x="404" y="217" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Content / evidence</text>
+<line x1="394" y1="196" x2="394" y2="593" stroke="#1559ab" stroke-width="2" />
+<line x1="150" y1="224" x2="756" y2="224" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="241" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">1. Request (user)</text>
+<path d="M 382 247 L 382 261" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="240" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Case LAB-042 status?</text>
+<line x1="150" y1="254" x2="756" y2="254" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="271" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">2. Proposal</text>
+<text x="160" y="290" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">(assistant)</text>
+<path d="M 382 289 L 382 303" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="270" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Read-only lookup;</text>
+<text x="404" y="289" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">case_ref: LAB-042</text>
+<line x1="150" y1="296" x2="756" y2="296" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="313" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">3. Policy decision</text>
+<path d="M 382 319 L 382 333" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="312" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Illustrative decision: permitted</text>
+<line x1="150" y1="326" x2="756" y2="326" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="343" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">4. Invocation (tool)</text>
+<path d="M 382 361 L 382 375" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="342" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">lookup invoked; case_ref: LAB-042</text>
+<line x1="150" y1="368" x2="756" y2="368" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="385" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">5. Tool response</text>
+<text x="160" y="404" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">returned</text>
+<path d="M 382 421 L 382 435" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="384" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">“case LAB-042: status open.”</text>
+<text x="404" y="403" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">lower-trust tool content</text>
+<text x="404" y="422" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">returned content, not authority</text>
+<line x1="150" y1="428" x2="756" y2="428" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="445" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">6. Next-input</text>
+<text x="160" y="464" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">ingestion</text>
+<path d="M 382 526 L 382 540" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="444" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">1) Prior call: read-only lookup</text>
+<text x="404" y="463" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">case_ref: LAB-042</text>
+<text x="404" y="482" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">2) Tool: “case LAB-042: status open.”</text>
+<text x="160" y="497" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">INGESTION</text>
+<text x="160" y="518" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">POINT</text>
+<path d="M 401 433 L 396 433 L 396 508 L 401 508" fill="none" stroke="#17212b" stroke-width="2" />
+<line x1="150" y1="533" x2="756" y2="533" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="550" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">7. Answer (assistant)</text>
+<path d="M 382 556 L 382 570" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="404" y="549" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">Case LAB-042 is open.</text>
+<line x1="150" y1="563" x2="756" y2="563" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="580" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">8. Termination</text>
+<text x="404" y="579" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">completion</text>
+<rect x="150" y="599" width="606" height="25" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="618" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">response seen in next input: ☑ observed / ☐ not visible</text>
+<rect x="150" y="630" width="606" height="45" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="650" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">State evidence</text>
+<text x="160" y="671" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">no mutation in constructed example; verify real run.</text>
+<rect x="150" y="681" width="606" height="40" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="698" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">case_ref: LAB-042; credential: [REDACTED]</text>
+<text x="160" y="718" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">retain event relationships, not secret values.</text>
+<rect x="150" y="727" width="606" height="48" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="160" y="746" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Review:</text>
+<rect x="250" y="735" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="267" y="746" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">unsupported execution?</text>
+<rect x="500" y="735" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="517" y="746" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">unverified state?</text>
+<rect x="250" y="757" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="267" y="768" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">missing next input?</text>
+<rect x="530" y="753" width="210" height="20" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="543" y="769" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">unknown</text>
+<rect x="780" y="196" width="606" height="397" fill="white" stroke="#1559ab" stroke-width="2" />
+<rect x="780" y="196" width="606" height="28" fill="#e8f1fc" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="217" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Step / event</text>
+<text x="1034" y="217" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Content / evidence</text>
+<line x1="1024" y1="196" x2="1024" y2="593" stroke="#1559ab" stroke-width="2" />
+<line x1="780" y1="224" x2="1386" y2="224" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="241" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">1. Request (user)</text>
+<path d="M 1012 247 L 1012 261" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="254" x2="1386" y2="254" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="271" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">2. Proposal</text>
+<text x="790" y="290" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">(assistant)</text>
+<path d="M 1012 289 L 1012 303" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="296" x2="1386" y2="296" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="313" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">3. Policy decision</text>
+<path d="M 1012 319 L 1012 333" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="326" x2="1386" y2="326" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="343" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">4. Invocation (tool)</text>
+<path d="M 1012 361 L 1012 375" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="368" x2="1386" y2="368" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="385" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">5. Tool response</text>
+<text x="790" y="404" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">returned</text>
+<path d="M 1012 421 L 1012 435" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="428" x2="1386" y2="428" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="445" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">6. Next-input</text>
+<text x="790" y="464" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">ingestion</text>
+<path d="M 1012 526 L 1012 540" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="533" x2="1386" y2="533" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="550" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">7. Answer (assistant)</text>
+<path d="M 1012 556 L 1012 570" fill="none" stroke="#17212b" stroke-width="1.3" marker-end="url(#arrow)" />
+<line x1="780" y1="563" x2="1386" y2="563" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="580" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">8. Termination</text>
+<rect x="780" y="599" width="606" height="25" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="618" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">response seen in next input: ☐ observed / ☐ not visible</text>
+<rect x="780" y="630" width="606" height="45" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="650" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">State evidence</text>
+<rect x="780" y="681" width="606" height="40" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="704" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Example argument / result detail:</text>
+<rect x="780" y="727" width="606" height="48" fill="white" stroke="#1559ab" stroke-width="2" />
+<text x="790" y="746" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#17212b">Review:</text>
+<rect x="880" y="735" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="897" y="746" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">unsupported execution?</text>
+<rect x="1130" y="735" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="1147" y="746" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">unverified state?</text>
+<rect x="880" y="757" width="11" height="11" fill="white" stroke="#17212b" stroke-width="2" />
+<text x="897" y="768" font-family="DejaVu Sans" font-size="18" font-weight="normal" fill="#17212b">missing next input?</text>
+<rect x="1160" y="753" width="210" height="20" fill="white" stroke="#17212b" stroke-width="2" />
+<path d="M 675 382 L 746 382 L 746 478 L 742 478" fill="none" stroke="#17212b" stroke-width="1.6" marker-end="url(#arrow)" />
+</svg>

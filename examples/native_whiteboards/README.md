@@ -7,3 +7,5 @@ These editable SVGs are author-built illustrations for the saved Agentic Red-Tea
 - Stage 11, lesson 4: `session-a-run-card.svg` contains the synthetic Ticket A shipping question and proposed attacker-controlled note. The assistant response and evidence reference stay empty; no result is shown.
 
 Replace blank fields only with your own authorized observations. Proposed contacts are not HarborDesk staff assignments. A constructed sequence is not an observed run. These diagrams support the course's existing lecture text; they do not change its topic or claim experimental success.
+
+Stage 3, lesson 4 also supplies `trace-example-and-template-full.svg`: the full constructed LAB-RUN-042 worksheet beside a blank personal-run template. It retains separate permission and invocation steps, the lower-trust returned message and its provenance into the next model input, the ingestion marker, state evidence, redaction example and review checks. The observed mark belongs only to the constructed example; the personal-run observation boxes and evidence fields remain empty.
