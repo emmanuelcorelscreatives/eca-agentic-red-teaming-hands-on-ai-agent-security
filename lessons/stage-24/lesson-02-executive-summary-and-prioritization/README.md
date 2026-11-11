@@ -19,3 +19,7 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+## Matching editable report template
+
+Use the [actual one-page management-summary draft](../../../examples/management_summary/README.md) from the native Writer demonstration. Evidence fields remain blank and all three actions remain proposed.

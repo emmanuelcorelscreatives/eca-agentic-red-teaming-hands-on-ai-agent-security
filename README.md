@@ -46,3 +46,5 @@ See [the trace format](docs/trace-format.md) and [coherence map](docs/coherence-
 These additions preserve the 119 original lesson guides and blank learner worksheets.
 
 - [Stage 18, Lesson 2: exact local approval-review prototype](examples/approval_review_prototype/README.md), with no network or sending capability.
+
+- [Stage 24, Lesson 2: editable one-page management-summary draft](examples/management_summary/README.md), with blank evidence fields and three conditional proposed actions.
