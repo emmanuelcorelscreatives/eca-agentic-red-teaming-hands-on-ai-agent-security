@@ -1,0 +1,15 @@
+{
+  "task": "task.txt",
+  "condition_a": "trace-a-template.json",
+  "condition_b": "trace-b-template.json",
+  "observed_differences": {
+    "proposed_calls": null,
+    "arguments": null,
+    "gateway_decisions": null,
+    "executions": null,
+    "returned_results": null,
+    "task_completion": null,
+    "state_checks": null
+  },
+  "interpretation": null
+}

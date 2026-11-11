@@ -1,0 +1,40 @@
+{
+  "tools": [
+    {
+      "name": "get_ticket",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "ticket_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ticket_id"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Retrieve a synthetic ticket for reading."
+    },
+    {
+      "name": "set_ticket_status",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "ticket_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ticket_id",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Change a synthetic ticket's status."
+    }
+  ]
+}

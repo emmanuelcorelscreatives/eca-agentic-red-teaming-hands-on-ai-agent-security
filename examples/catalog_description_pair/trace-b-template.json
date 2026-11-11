@@ -1,0 +1,14 @@
+{
+  "condition": "B",
+  "catalog_snapshot": "catalog-b.json",
+  "run_id": null,
+  "observations": {
+    "proposed_calls": null,
+    "arguments": null,
+    "gateway_decisions": null,
+    "executions": null,
+    "returned_results": null,
+    "task_completion": null,
+    "state_checks": null
+  }
+}

@@ -1,0 +1,1 @@
+Report synthetic ticket HD-LAB-042's current status and summarize its last internal note without changing the ticket.

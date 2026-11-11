@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f2f4f7" />
+<rect x="190" y="362" width="438" height="136" fill="#f2f4f7" stroke="#172b4d" stroke-width="2" />
+<text x="224" y="438" font-family="DejaVu Sans" font-size="27" font-weight="normal" fill="#172b4d">Synthetic customer request</text>
+<rect x="804" y="299" width="542" height="262" fill="#f2f4f7" stroke="#172b4d" stroke-width="2" />
+<rect x="850" y="362" width="450" height="136" fill="#f2f4f7" stroke="#172b4d" stroke-width="2" />
+<text x="874" y="418" font-family="DejaVu Sans" font-size="29" font-weight="normal" fill="#172b4d">Approved synthetic</text>
+<text x="908" y="459" font-family="DejaVu Sans" font-size="29" font-weight="normal" fill="#172b4d">retrieval item</text>
+</svg>
