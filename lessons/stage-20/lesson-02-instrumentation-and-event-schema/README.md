@@ -23,3 +23,8 @@ Complete `worksheet.json` for this lesson’s stated task. Link the exact fixtur
 ## Runnable schema exercise
 
 The [event-schema example kit](../../../examples/stage20_events/README.md) supplies the unfinished event, completed event, final schema, three-event trace and correlation diagram. Install its pinned requirement in Python 3.12 and run the tests from the repository root. All sample records are constructed teaching data.
+
+
+### Additional matching source files
+
+The [event example directory](../../../examples/stage20_events/README.md#drafting-states-and-intentional-negative-input) includes the unfinished allow-decision draft, exact two-change invalid trace, and explicit synthetic-reference notes. Final schema checks and evidence checks remain separate.

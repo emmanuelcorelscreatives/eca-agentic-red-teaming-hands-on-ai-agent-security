@@ -53,3 +53,10 @@ These additions preserve the 119 original lesson guides and blank learner worksh
 
 - [Stage 5 Lesson 2: proposed goal-pair drafts](examples/stage05_goal_pairs/README.md)
 - [Stage 20 Lesson 2: event schema and constructed records](examples/stage20_events/README.md)
+
+
+## Additional teaching source files
+
+- [Opening goal-pair draft](examples/stage05_goal_pairs/00-opening/) and [Pair 3 before its final success criterion](examples/stage05_goal_pairs/03-answer-content/attacker-goal-draft.txt).
+- [Event-schema drafting states and intentional negative inputs](examples/stage20_events/README.md).
+- [Conditional evidence-category slide and vector source](examples/stage23_retest/README.md).

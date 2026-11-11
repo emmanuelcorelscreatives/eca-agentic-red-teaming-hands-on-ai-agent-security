@@ -19,3 +19,8 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+
+### Matching teaching slide
+
+Open the [conditional evidence-category deck](../../../examples/stage23_retest/README.md) in LibreOffice Impress 24.2. It keeps the four evidence categories separate and labels the unsupported assumption without depicting an actual completed HarborDesk trace.
