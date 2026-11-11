@@ -19,3 +19,7 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+## Matching local training prototype
+
+Use the [three exact static approval-review states](../../../examples/approval_review_prototype/README.md) alongside this lesson. They preserve the complete authorized message and keep proposed actions distinct from approval or execution.

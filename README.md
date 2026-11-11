@@ -44,3 +44,5 @@ See [the trace format](docs/trace-format.md) and [coherence map](docs/coherence-
 - [Stage 20, Lesson 4: record-security scoring with saved intermediate changes](examples/stage20_records/README.md). This implements only the records check, with explicit trusted-fixture assumptions and separate tests.
 
 These additions preserve the 119 original lesson guides and blank learner worksheets.
+
+- [Stage 18, Lesson 2: exact local approval-review prototype](examples/approval_review_prototype/README.md), with no network or sending capability.
