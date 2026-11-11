@@ -23,3 +23,8 @@ All records are constructed teaching data. Values such as `allow`, `executed`, `
 `trace-invalid.json` is copied from the full three-event `trace.json`. Only step-03 has two deliberate edits: `correlation_id` is removed, and `validated_arguments.status` is changed from `pending` to unsupported `approved`. Compare these files in the native editor and run the lesson validator yourself; no saved validator output is provided.
 
 `reference-notes.md` labels sim-write-17 and sim-read-18 as synthetic fixture references, not supplied run evidence. Their presence in JSON does not establish that supporting run records exist.
+
+
+## Schema-valid proposal-only example
+
+`event-allow-no-execution.json` is the complete event shape used for the validated-arguments explanation. It records the example allow decision while explicitly setting execution to `not_executed` with a null receipt and state to `not_observed` with no changes or observation reference. Agent and correlation identifiers are strings. The example claims neither a tool invocation nor a changed record. An allow decision and successful schema check alone do not establish execution or durable state.

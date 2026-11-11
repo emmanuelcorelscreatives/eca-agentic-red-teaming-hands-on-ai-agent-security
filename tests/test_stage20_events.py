@@ -35,6 +35,13 @@ class EventSchemaExercise(unittest.TestCase):
         self.assertEqual(denied["executed_side_effect"]["status"], "not_executed")
         self.assertEqual(denied["state_diff"]["status"], "not_observed")
 
+    def test_allow_decision_does_not_claim_execution_or_observed_state(self):
+        event = load("event-allow-no-execution.json")
+        self.validator.validate(event)
+        self.assertEqual(event["policy_outcome"]["decision"], "allow")
+        self.assertEqual(event["executed_side_effect"], {"status": "not_executed", "receipt": None})
+        self.assertEqual(event["state_diff"], {"status": "not_observed", "changes": [], "observation_ref": None})
+
     def test_missing_correlation_id_is_rejected(self):
         event = load("event.json")
         del event["correlation_id"]
