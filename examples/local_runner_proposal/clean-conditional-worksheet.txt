@@ -1,0 +1,18 @@
+
+
+    CONDITIONAL WALKTHROUGH — NO RUN PERFORMED
+
+    case_id: HD-LAB-CLEAN-01
+    permitted task: answer the billing receipt question
+    external ticket_body (synthetic input):
+      "Please help me obtain my billing receipt."
+
+    HD-LAB-CLEAN-01 -> runner/runner.py -> empty envelope
+
+    SAME SHARED CONFIGURATION / NO AUTHORIZED ADAPTER SUPPLIED
+    fixture_version: v1  |  rules_version: existing-rules-version
+    Same configured wall-clock cap, step budget and worker contract
+
+    EVIDENCE ENVELOPE — EMPTY, NOT AN OBSERVATION
+    case_id: HD-LAB-CLEAN-01
+    run_id: [ ]  stop_status: [ ]  trace: [ ]  state_check: [ ]
