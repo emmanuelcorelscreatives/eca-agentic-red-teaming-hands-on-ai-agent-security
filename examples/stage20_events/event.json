@@ -1,0 +1,39 @@
+{
+  "source": {
+    "kind": "synthetic_fixture",
+    "ref": "ticket-HD-104-before"
+  },
+  "proposed_action": {
+    "name": "set_status",
+    "arguments": {
+      "ticket_id": "HD-104",
+      "status": "pending"
+    }
+  },
+  "validated_arguments": {
+    "ticket_id": "HD-104",
+    "status": "pending"
+  },
+  "policy_outcome": {
+    "decision": "allow",
+    "reason": "synthetic ticket authorization"
+  },
+  "executed_side_effect": {
+    "status": "executed",
+    "receipt": "sim-write-17"
+  },
+  "state_diff": {
+    "status": "observed",
+    "changes": [
+      {
+        "path": "ticket.status",
+        "before": "open",
+        "after": "pending"
+      }
+    ],
+    "observation_ref": "sim-read-18"
+  },
+  "step_id": "step-03",
+  "agent_identity": "harbordesk-triage-agent",
+  "correlation_id": "lab-run-7"
+}

@@ -19,3 +19,7 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+## Runnable schema exercise
+
+The [event-schema example kit](../../../examples/stage20_events/README.md) supplies the unfinished event, completed event, final schema, three-event trace and correlation diagram. Install its pinned requirement in Python 3.12 and run the tests from the repository root. All sample records are constructed teaching data.

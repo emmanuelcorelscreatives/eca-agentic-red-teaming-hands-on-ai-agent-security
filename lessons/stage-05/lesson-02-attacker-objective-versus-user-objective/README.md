@@ -19,3 +19,7 @@ Record your own observations. Keep proposed actions, permitted actions, handler 
 ## Deliverable
 
 Complete `worksheet.json` for this lesson’s stated task. Link the exact fixture version, policy, trace and reviewed code revision you used. Do not invent measurements or results.
+
+## Saved exercise drafts
+
+Use the [progressive Notepad drafts](../../../examples/stage05_goal_pairs/README.md) for the account-goal, compact recap and answer-content views. The files retain proposed criteria and earlier notes; they contain no test results.

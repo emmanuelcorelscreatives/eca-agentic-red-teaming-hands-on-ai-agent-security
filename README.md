@@ -48,3 +48,8 @@ These additions preserve the 119 original lesson guides and blank learner worksh
 - [Stage 18, Lesson 2: exact local approval-review prototype](examples/approval_review_prototype/README.md), with no network or sending capability.
 
 - [Stage 24, Lesson 2: editable one-page management-summary draft](examples/management_summary/README.md), with blank evidence fields and three conditional proposed actions.
+
+## Reproducible lesson files
+
+- [Stage 5 Lesson 2: proposed goal-pair drafts](examples/stage05_goal_pairs/README.md)
+- [Stage 20 Lesson 2: event schema and constructed records](examples/stage20_events/README.md)

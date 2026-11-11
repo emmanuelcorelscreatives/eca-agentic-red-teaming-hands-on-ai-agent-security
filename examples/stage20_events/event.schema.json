@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic HarborDesk action event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "step_id",
+    "source",
+    "proposed_action",
+    "validated_arguments",
+    "policy_outcome",
+    "executed_side_effect",
+    "state_diff",
+    "agent_identity",
+    "correlation_id"
+  ],
+  "properties": {
+    "step_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "ref"
+      ],
+      "properties": {
+        "kind": {
+          "const": "synthetic_fixture"
+        },
+        "ref": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "proposed_action": {
+      "type": "object",
+      "required": [
+        "name",
+        "arguments"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "arguments": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "validated_arguments": {
+      "type": "object",
+      "required": [
+        "ticket_id",
+        "status"
+      ],
+      "properties": {
+        "ticket_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "open",
+            "pending"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "policy_outcome": {
+      "type": "object",
+      "required": [
+        "decision",
+        "reason"
+      ],
+      "properties": {
+        "decision": {
+          "enum": [
+            "allow",
+            "deny"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "executed_side_effect": {
+      "type": "object",
+      "required": [
+        "status",
+        "receipt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "executed",
+            "not_executed"
+          ]
+        },
+        "receipt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "state_diff": {
+      "type": "object",
+      "required": [
+        "status",
+        "changes",
+        "observation_ref"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "observed",
+            "not_observed"
+          ]
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "before",
+              "after"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "before": {
+                "type": "string"
+              },
+              "after": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "observation_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "agent_identity": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    }
+  }
+}
