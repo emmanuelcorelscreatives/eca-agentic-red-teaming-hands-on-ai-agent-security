@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<office:document xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
+<office:styles><style:default-style style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0in" fo:line-height="110%" /><style:text-properties fo:font-family="Liberation Sans" fo:font-size="9.7pt" fo:color="#202936" /></style:default-style></office:styles>
+<office:automatic-styles>
+<style:style style:name="T" style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0.06in" /><style:text-properties fo:font-size="16pt" fo:font-weight="bold" /></style:style>
+<style:style style:name="K" style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0.07in" /><style:text-properties fo:font-size="9pt" fo:color="#475569" /></style:style>
+<style:style style:name="H" style:family="paragraph"><style:paragraph-properties fo:margin-top="0.065in" fo:margin-bottom="0.035in" fo:background-color="#E9EDF1" fo:padding="0.03in" fo:keep-with-next="always" /><style:text-properties fo:font-size="9.8pt" fo:font-weight="bold" /></style:style>
+<style:style style:name="B" style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0.025in" /><style:text-properties fo:font-size="9.7pt" /></style:style>
+<style:style style:name="A" style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0.025in" /><style:text-properties fo:font-size="9.5pt" fo:font-weight="bold" /></style:style>
+<style:style style:name="D" style:family="paragraph"><style:paragraph-properties fo:margin-bottom="0.015in" /><style:text-properties fo:font-size="9.2pt" /></style:style>
+<style:style style:name="ActionTable" style:family="table"><style:table-properties style:width="9.7in" table:align="margins" /></style:style>
+<style:style style:name="ActionColumn" style:family="table-column"><style:table-column-properties style:column-width="9.7in" /></style:style>
+<style:style style:name="ActionCell" style:family="table-cell"><style:table-cell-properties fo:border="0.5pt solid #AEB9C5" fo:padding="0.055in" /></style:style>
+<style:page-layout style:name="PageLayout"><style:page-layout-properties fo:page-width="11in" fo:page-height="8.5in" style:print-orientation="landscape" fo:margin-top="0.42in" fo:margin-bottom="0.42in" fo:margin-left="0.65in" fo:margin-right="0.65in" /></style:page-layout>
+<style:style style:name="ControlColumns" style:family="table"><style:table-properties style:width="9.7in" table:align="margins" /></style:style><style:style style:name="ControlCol" style:family="table-column"><style:table-column-properties style:column-width="4.85in" /></style:style><style:style style:name="ControlCell" style:family="table-cell"><style:table-cell-properties fo:border="0.75pt solid #64748B" fo:padding="0.12in" /></style:style><style:style style:name="ControlHeader" style:family="paragraph"><style:text-properties fo:font-family="Liberation Sans" fo:font-size="12pt" fo:font-weight="bold" /></style:style><style:style style:name="ControlBlank" style:family="table-row"><style:table-row-properties style:min-row-height="0.45in" /></style:style></office:automatic-styles>
+<office:master-styles><style:master-page style:name="Standard" style:page-layout-name="PageLayout" /></office:master-styles>
+<office:body><office:text>
+<text:p text:style-name="T">HarborDesk — Management Summary</text:p>
+<text:p text:style-name="K">Authorized synthetic-lab draft · No HarborDesk test artifact supplied</text:p>
+<text:p text:style-name="H">Decision needed</text:p>
+<text:p text:style-name="B">Review documented lab evidence and assign owners to verify relevance before any production-risk claim.</text:p>
+<text:p text:style-name="H">Authorized scope</text:p>
+<text:p text:style-name="B">Authorized HarborDesk synthetic sandbox only; production configuration and exposure not assessed by this draft.</text:p>
+<text:p text:style-name="H">Supported observations and evidence</text:p>
+<text:p text:style-name="B">Observed behavior: [ ]   Evidence reference / reproduction steps: [ ]   Affected interface: [ ]</text:p>
+<text:p text:style-name="B">Measured result: [ ]   Tester: [ ]   Time: [ ]</text:p>
+<text:p text:style-name="B">Evidence status: No HarborDesk test artifact supplied; no specific finding established.</text:p>
+<text:p text:style-name="H">Reachability</text:p>
+<text:p text:style-name="B">Lab starting position: [ ]   Account/rights: [ ]   User action/prerequisites: [ ]</text:p>
+<text:p text:style-name="B">Path, if documented: [ ]   Tested controls: [ ]   Unverified conditions: unknown.</text:p>
+<text:p text:style-name="H">Possible consequences</text:p>
+<text:p text:style-name="B">If a path supported by authorized evidence applies, [ ] could follow; business consequence: [ ]. No loss is established.</text:p>
+<text:p text:style-name="H">Control gap</text:p>
+<text:p text:style-name="B">Tested control behavior: [ ]   Gap, only if supported: [ ]   Cause: [ ]</text:p>
+<text:p text:style-name="B">Untested safeguards and production control state: unknown; do not infer a missing or failed control.</text:p>
+<table:table table:name="Tested and untested controls" table:style-name="ControlColumns"><table:table-column table:style-name="ControlCol" /><table:table-column table:style-name="ControlCol" /><table:table-row><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p text:style-name="ControlHeader">Tested: describe observed effectiveness</text:p></table:table-cell><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p text:style-name="ControlHeader">Not tested: list as unknown</text:p></table:table-cell></table:table-row><table:table-row table:style-name="ControlBlank"><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p /></table:table-cell><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p /></table:table-cell></table:table-row><table:table-row table:style-name="ControlBlank"><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p /></table:table-cell><table:table-cell table:style-name="ControlCell" office:value-type="string"><text:p /></table:table-cell></table:table-row></table:table></office:text></office:body></office:document>

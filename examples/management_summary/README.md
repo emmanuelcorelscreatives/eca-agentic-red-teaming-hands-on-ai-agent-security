@@ -9,3 +9,8 @@ The three actions remain distinct: conditional immediate containment, engineerin
 This is an unfilled teaching draft. Replace a bracket only when your own authorized evidence supports the claim. A proposed action is not proof that it happened. The template does not assess a real production system or assign a severity rating.
 
 The native full report was checked to fit one page. Earlier lesson stages show the same draft before the action rows are added; they are not invented test results. Keep the original learner worksheet blank until you perform an authorized exercise.
+
+
+## Earlier control-gap drafting stage
+
+[HarborDesk-Control-Gap-Draft.fodt](HarborDesk-Control-Gap-Draft.fodt) preserves the earlier sections through Control gap and adds the exact two-column Tested/Not tested distinction. Both result areas are blank. Later conditional assessment and proposed actions are intentionally not yet drafted; use the complete management-summary file for the final stage.

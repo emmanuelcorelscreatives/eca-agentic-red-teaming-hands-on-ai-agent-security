@@ -73,6 +73,7 @@ def gateway(actor, tool, args):
     return result
 
 
+# LOG lives in process memory; terminal output is not yet an evidence file.
 if __name__ == '__main__':
     import json
     gateway('analyst', 'read_ticket', {'ticket_id': 'T-104'})
