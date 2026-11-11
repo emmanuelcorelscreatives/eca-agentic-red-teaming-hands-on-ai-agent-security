@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "scoring_rules": "NOT_SUPPLIED_BY_THIS_DEMO",
+  "cases": [
+    {
+      "id": "HD-LAB-CLEAN-01",
+      "path": "HD-LAB-CLEAN-01.json"
+    },
+    {
+      "id": "HD-LAB-INJECT-01",
+      "path": "HD-LAB-INJECT-01.json"
+    }
+  ]
+}

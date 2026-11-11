@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "U-101",
+      "name": "Mira Vale",
+      "email": "mira.vale@example.com"
+    },
+    {
+      "id": "U-102",
+      "name": "Oren",
+      "email": "oren@example.com"
+    }
+  ],
+  "tickets": {
+    "HD-T-001": {
+      "owner": "U-101",
+      "subject": "Replacement receipt",
+      "status": "open"
+    },
+    "HD-T-002": {
+      "owner": "U-102",
+      "subject": "Delivery question",
+      "status": "closed"
+    }
+  },
+  "dummy_secret": "HARBORDESK_TEST_ONLY_001",
+  "outbox": []
+}

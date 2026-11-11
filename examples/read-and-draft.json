@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "read_ticket",
+    "arguments": {
+      "ticket_id": "T-104"
+    }
+  },
+  {
+    "tool": "draft_message",
+    "arguments": {
+      "ticket_id": "T-104",
+      "body": "Please check the approved receipt retrieval path."
+    }
+  },
+  {
+    "tool": "send_message",
+    "arguments": {
+      "ticket_id": "T-104",
+      "body": "This proposal must be blocked under this demo policy."
+    }
+  }
+]

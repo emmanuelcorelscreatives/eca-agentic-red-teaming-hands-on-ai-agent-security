@@ -1,0 +1,9 @@
+{
+  "description": "Explicit policy for this repository’s local demonstration, not a claim about a preexisting HarborDesk permission matrix.",
+  "allowed_tools": [
+    "read_ticket",
+    "search_kb",
+    "draft_message"
+  ],
+  "network_delivery": false
+}

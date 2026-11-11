@@ -1,0 +1,958 @@
+{
+  "academy": "Emmanuel Corels Academy",
+  "title": "Agentic Red-Teaming: Hands-On AI Agent Security",
+  "lessons": [
+    {
+      "order": 1,
+      "stage": 0,
+      "lesson": 1,
+      "title": "Course Introduction and Learning Journey",
+      "directory": "lessons/stage-00/lesson-01-course-introduction-and-learning-journey",
+      "brief": "Lesson 1 — Course Introduction and Learning Journey\nStage 0 — Course Orientation\nObjective: Build anticipation by introducing the course, the real investigation problems it helps learners solve and the practical skills they will gain; preview the learning journey and warmly invite students into the course proper."
+    },
+    {
+      "order": 2,
+      "stage": 1,
+      "lesson": 1,
+      "title": "What Makes an Agentic Assessment Different?",
+      "directory": "lessons/stage-01/lesson-01-what-makes-an-agentic-assessment-different",
+      "brief": "Lesson 1 — What Makes an Agentic Assessment Different? \nObjective: Differentiate a prompt-only failure from a failure involving planning,\ntools, state, or handoffs.\nCore: Walk through HarborDesk's legitimate request, plan, tool call, response,\nmemory write, and final answer. Locate the points at which untrusted data could be\npromoted to authority.\nPractice / evidence: Label each step as observation, decision, action, or durable\nchange in a one-page workflow sketch.\n\nEnsure you welcome users to this course."
+    },
+    {
+      "order": 3,
+      "stage": 1,
+      "lesson": 2,
+      "title": "Course Roadmap and Professional Outcomes",
+      "directory": "lessons/stage-01/lesson-02-course-roadmap-and-professional-outcomes",
+      "brief": "Lesson 2 — Course Roadmap and Professional Outcomes\nStage 1 — Course Orientation and Rules of Engagement\nObjective: Connect the 24-stage sequence to practical security-engineering deliverables.\nCore: Introduce the threat model, scenario card, event trace, scoring sheet, finding, and defensive retest as successive outputs rather than separate academic exercises.\nPractice / evidence: Create a personal learning checklist with the artifacts to be submitted at each milestone."
+    },
+    {
+      "order": 4,
+      "stage": 1,
+      "lesson": 3,
+      "title": "Authorization, Boundaries, and Stop Conditions",
+      "directory": "lessons/stage-01/lesson-03-authorization-boundaries-and-stop-conditions",
+      "brief": "Lesson 3 — Authorization, Boundaries, and Stop Conditions\nStage 1 — Course Orientation and Rules of Engagement\nObjective: Define what the learner may manipulate and what must remain protected.\nCore: Scope injected ticket text, mock tool output, sandbox state, and simulated agent messages. Explicitly prohibit real external recipients, production credentials, and uncontrolled automation.\nPractice / evidence: Complete a rules-of-engagement card listing allowed assets, forbidden actions, data handling, emergency stop, and cleanup owner."
+    },
+    {
+      "order": 5,
+      "stage": 1,
+      "lesson": 4,
+      "title": "Set Up the Assessment Journal",
+      "directory": "lessons/stage-01/lesson-04-set-up-the-assessment-journal",
+      "brief": "Lesson 4 — Set Up the Assessment Journal\nStage 1 — Course Orientation and Rules of Engagement\nObjective: Record a repeatable experiment without conflating observations and interpretations.\nCore: Use a consistent template: authorized user goal, attacker objective, controlled surface, preconditions, intervention, run ID, observed events, conclusion, and limitations.\nPractice / evidence: Document a harmless toy case and separate a model's stated intention from an actually executed tool action."
+    },
+    {
+      "order": 6,
+      "stage": 2,
+      "lesson": 1,
+      "title": "The Observe–Plan–Act–Verify Loop",
+      "directory": "lessons/stage-02/lesson-01-the-observe-plan-act-verify-loop",
+      "brief": "Lesson 1 — The Observe–Plan–Act–Verify Loop\nStage 2 — Agent Architecture and Attack-Surface Mapping\nObjective: Trace a request across a complete agent loop.\nCore: Distinguish input ingestion, task decomposition, tool selection, action execution, result interpretation, verification, and termination. Note that each additional loop can reintroduce attacker-controlled material.\nPractice / evidence: Number the events in a clean ticket-resolution trace and identify two points requiring independent validation."
+    },
+    {
+      "order": 7,
+      "stage": 2,
+      "lesson": 2,
+      "title": "Planner, Executor, and Policy Enforcer",
+      "directory": "lessons/stage-02/lesson-02-planner-executor-and-policy-enforcer",
+      "brief": "Lesson 2 — Planner, Executor, and Policy Enforcer\nStage 2 — Agent Architecture and Attack-Surface Mapping\nObjective: Identify which component proposes an action and which component must authorize it.\nCore: Contrast language-model planning with deterministic tool gateways and user approval. An agent's confident recommendation is not an authorization decision.\nPractice / evidence: Mark each HarborDesk component as proposer, data supplier, policy decision point, or action executor."
+    },
+    {
+      "order": 8,
+      "stage": 2,
+      "lesson": 3,
+      "title": "Memory, Retrieval, and Durable State",
+      "directory": "lessons/stage-02/lesson-03-memory-retrieval-and-durable-state",
+      "brief": "Lesson 3 — Memory, Retrieval, and Durable State\nStage 2 — Agent Architecture and Attack-Surface Mapping\nObjective: Distinguish ephemeral context, retrieval results, durable memory, and external records.\nCore: Examine how information survives a step, a session, or a user boundary; identify where provenance and ownership should be attached.\nPractice / evidence: Draw a state-lifetime map and flag entries that could improperly influence a future request."
+    },
+    {
+      "order": 9,
+      "stage": 2,
+      "lesson": 4,
+      "title": "Single-Agent and Multi-Agent Topologies",
+      "directory": "lessons/stage-02/lesson-04-single-agent-and-multi-agent-topologies",
+      "brief": "Lesson 4 — Single-Agent and Multi-Agent Topologies\nStage 2 — Agent Architecture and Attack-Surface Mapping\nObjective: Map the new boundaries introduced by delegation.\nCore: Compare one agent with tools against an orchestrator plus research and action agents. Include message bus, shared workspace, sender identity, and differing privileges.\nPractice / evidence: Draw separate trust edges for data, instructions, and executable actions."
+    },
+    {
+      "order": 10,
+      "stage": 2,
+      "lesson": 5,
+      "title": "Build the Attack-Surface Register",
+      "directory": "lessons/stage-02/lesson-05-build-the-attack-surface-register",
+      "brief": "Lesson 5 — Build the Attack-Surface Register\nStage 2 — Agent Architecture and Attack-Surface Mapping\nObjective: Prioritize concrete ingress points rather than generic 'AI risks.'\nCore: Register ticket bodies, retrieved passages, tool descriptions, tool responses, memory summaries, approvals, and agent messages with owners and downstream effects.\nPractice / evidence: Submit a table of at least eight surfaces with their attacker control, affected authority boundary, and likely impact."
+    },
+    {
+      "order": 11,
+      "stage": 3,
+      "lesson": 1,
+      "title": "Laboratory Architecture and Isolation",
+      "directory": "lessons/stage-03/lesson-01-laboratory-architecture-and-isolation",
+      "brief": "Lesson 1 — Laboratory Architecture and Isolation\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Explain the sandbox boundary before executing tests.\nCore: Introduce local services for tickets, knowledge base, mock identity store, memory, approval queue, action gateway, and append-only events. No live integrations are required.\nPractice / evidence: Check the environment diagram against the rules-of- engagement card."
+    },
+    {
+      "order": 12,
+      "stage": 3,
+      "lesson": 2,
+      "title": "Synthetic Fixtures and Reset Strategy",
+      "directory": "lessons/stage-03/lesson-02-synthetic-fixtures-and-reset-strategy",
+      "brief": "Lesson 2 — Synthetic Fixtures and Reset Strategy\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Keep tests realistic without using sensitive data.\nCore: Prepare fictional users, ticket IDs, dummy secrets, and a marker-only outbox. Snapshot clean fixtures so each run starts from the same state.\nPractice / evidence: Restore a fixture and verify that previous memory and messages are absent."
+    },
+    {
+      "order": 13,
+      "stage": 3,
+      "lesson": 3,
+      "title": "Mock Tools and Action Gateway",
+      "directory": "lessons/stage-03/lesson-03-mock-tools-and-action-gateway",
+      "brief": "Lesson 3 — Mock Tools and Action Gateway\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Model tool access in a way that separates requests from executions.\nCore: Configure read_ticket, search_kb, draft_message, send_message, update_record, and write_memory as local stubs. The gateway records proposed calls, validates permissions, and logs whether each call was blocked or executed.\nPractice / evidence: Submit one permitted and one denied call with corresponding gateway records."
+    },
+    {
+      "order": 14,
+      "stage": 3,
+      "lesson": 4,
+      "title": "Tracing Plans, Messages, and State",
+      "directory": "lessons/stage-03/lesson-04-tracing-plans-messages-and-state",
+      "brief": "Lesson 4 — Tracing Plans, Messages, and State\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Capture enough evidence to reconstruct an attack path.\nCore: Record run ID, step number, role, source trust level, proposed tool arguments, policy decision, resulting state delta, and termination reason. Avoid logging real secrets.\nPractice / evidence: Annotate a clean run with the exact point at which a tool response is ingested."
+    },
+    {
+      "order": 15,
+      "stage": 3,
+      "lesson": 5,
+      "title": "Safety Controls and Failure Recovery",
+      "directory": "lessons/stage-03/lesson-05-safety-controls-and-failure-recovery",
+      "brief": "Lesson 5 — Safety Controls and Failure Recovery\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Stop runaway loops and recover safely from test failures.\nCore: Configure step caps, action limits, rate or cost budgets, local-only egress, kill switch, cleanup, and per-run state namespaces. Rejected actions should still be visible in telemetry.\nPractice / evidence: Trigger a benign loop-limit test; save the termination event and prove the sandbox can be reset."
+    },
+    {
+      "order": 16,
+      "stage": 3,
+      "lesson": 6,
+      "title": "Sanity Check and Lab Sign-Off",
+      "directory": "lessons/stage-03/lesson-06-sanity-check-and-lab-sign-off",
+      "brief": "Lesson 6 — Sanity Check and Lab Sign-Off\nStage 3 — Building the Safe HarborDesk Lab\nObjective: Demonstrate the environment's integrity before adversarial work.\nCore: Run one ordinary service-desk task, verify correct output and authorized state changes, then restore fixtures. Confirm simulated sending only writes to the outbox.\nPractice / evidence: Deliver a lab sign-off checklist plus one clean trace and reset proof."
+    },
+    {
+      "order": 17,
+      "stage": 4,
+      "lesson": 1,
+      "title": "Assets, Principals, and Intended Behavior",
+      "directory": "lessons/stage-04/lesson-01-assets-principals-and-intended-behavior",
+      "brief": "Lesson 1 — Assets, Principals, and Intended Behavior\nStage 4 — Threat Modeling and Attack Authorization\nObjective: Specify what the user asked the agent to do and which assets matter.\nCore: Define allowed record reads, permitted updates, memory scopes, approval requirements, and agent identities. An outcome is not a vulnerability unless it violates a stated security objective.\nPractice / evidence: Write one legitimate task and its expected authorized actions."
+    },
+    {
+      "order": 18,
+      "stage": 4,
+      "lesson": 2,
+      "title": "Attacker Control and Entry Points",
+      "directory": "lessons/stage-04/lesson-02-attacker-control-and-entry-points",
+      "brief": "Lesson 2 — Attacker Control and Entry Points\nStage 4 — Threat Modeling and Attack Authorization\nObjective: Describe realistic attacker capabilities without assuming system-level access.\nCore: Differentiate a malicious ticket author, a contributor to retrieved content, a compromised mock tool response, and an impersonated agent-message sender.\nPractice / evidence: Prepare four attacker profiles, each with writable fields and explicit exclusions."
+    },
+    {
+      "order": 19,
+      "stage": 4,
+      "lesson": 3,
+      "title": "Trust Boundaries and Abuse Paths",
+      "directory": "lessons/stage-04/lesson-03-trust-boundaries-and-abuse-paths",
+      "brief": "Lesson 3 — Trust Boundaries and Abuse Paths\nStage 4 — Threat Modeling and Attack Authorization\nObjective: Express how lower-trust content might influence higher-trust actions.\nCore: Track origin, parser, planner, tool request, gateway, state change, and user- visible response. Include how an apparently innocuous first action enables a prohibited later one.\nPractice / evidence: Draw two abuse paths with a named boundary at each hop."
+    },
+    {
+      "order": 20,
+      "stage": 4,
+      "lesson": 4,
+      "title": "Security Invariants and Test Oracles",
+      "directory": "lessons/stage-04/lesson-04-security-invariants-and-test-oracles",
+      "brief": "Lesson 4 — Security Invariants and Test Oracles\nStage 4 — Threat Modeling and Attack Authorization\nObjective: Make success observable and falsifiable.\nCore: Examples: no outbound message without approval; no cross-user memory write; no record modification based solely on ticket prose; no agent can authorize itself.\nPractice / evidence: Translate three invariants into concrete pass/fail checks against event logs and state snapshots."
+    },
+    {
+      "order": 21,
+      "stage": 4,
+      "lesson": 5,
+      "title": "Risk-Based Scenario Selection",
+      "directory": "lessons/stage-04/lesson-05-risk-based-scenario-selection",
+      "brief": "Lesson 5 — Risk-Based Scenario Selection\nStage 4 — Threat Modeling and Attack Authorization\nObjective: Choose cases based on reachability, consequence, and evidence quality.\nCore: Score each scenario for exposure, downstream authority, potential persistence, and replay feasibility; reject cases that cannot be run safely or scored clearly.\nPractice / evidence: Deliver a ranked five-case backlog with attacker objective and control surface for each."
+    },
+    {
+      "order": 22,
+      "stage": 5,
+      "lesson": 1,
+      "title": "Benign Task Baselines",
+      "directory": "lessons/stage-05/lesson-01-benign-task-baselines",
+      "brief": "Lesson 1 — Benign Task Baselines\nStage 5 — Baselines and Evaluation Design\nObjective: Establish what successful authorized behavior looks like without an attacker.\nCore: Identify expected answer, allowed tool sequence, approval checkpoint, and final state. Record normal task failures separately from security failures.\nPractice / evidence: Save a clean task transcript, tool log, and final state snapshot."
+    },
+    {
+      "order": 23,
+      "stage": 5,
+      "lesson": 2,
+      "title": "Attacker Objective Versus User Objective",
+      "directory": "lessons/stage-05/lesson-02-attacker-objective-versus-user-objective",
+      "brief": "Lesson 2 — Attacker Objective Versus User Objective\nStage 5 — Baselines and Evaluation Design\nObjective: State competing goals precisely.\nCore: Contrast 'resolve the support ticket' with 'write a false account flag' or 'enqueue an unapproved message' in the local simulation; distinguish answer contamination from action-level harm.\nPractice / evidence: Draft three paired goal statements with observable success criteria."
+    },
+    {
+      "order": 24,
+      "stage": 5,
+      "lesson": 3,
+      "title": "Scenario Cards and Paired Runs",
+      "directory": "lessons/stage-05/lesson-03-scenario-cards-and-paired-runs",
+      "brief": "Lesson 3 — Scenario Cards and Paired Runs\nStage 5 — Baselines and Evaluation Design\nObjective: Specify repeatable interventions.\nCore: Each card names starting fixture, attacker-controlled field, insertion point, legitimate task, targeted deviation, scoring rule, reset procedure, and defensive variant.\nPractice / evidence: Complete two scenario cards and execute their clean controls."
+    },
+    {
+      "order": 25,
+      "stage": 5,
+      "lesson": 4,
+      "title": "Controls for Randomness and Variation",
+      "directory": "lessons/stage-05/lesson-04-controls-for-randomness-and-variation",
+      "brief": "Lesson 4 — Controls for Randomness and Variation\nStage 5 — Baselines and Evaluation Design\nObjective: Compare results without overinterpreting a single run.\nCore: Keep fixtures and tool policies fixed, log configuration and run identifiers, use repeat trials where practical, and reserve unseen cases for retesting.\nPractice / evidence: Run a benign task several times and note ordinary variability in plans and outcomes."
+    },
+    {
+      "order": 26,
+      "stage": 5,
+      "lesson": 5,
+      "title": "Evidence Standard and Milestone Review",
+      "directory": "lessons/stage-05/lesson-05-evidence-standard-and-milestone-review",
+      "brief": "Lesson 5 — Evidence Standard and Milestone Review\nStage 5 — Baselines and Evaluation Design\nObjective: Decide what constitutes a valid finding.\nCore: Require controlled entry point, before/after snapshots, gateway decision, observed consequence, and a reproduction narrative. A persuasive answer alone cannot prove an unauthorized tool action.\nPractice / evidence: Peer-review two scenario cards; reject or repair any ambiguous oracle."
+    },
+    {
+      "order": 27,
+      "stage": 6,
+      "lesson": 1,
+      "title": "Source Hierarchy and Data-to-Instruction Crossing",
+      "directory": "lessons/stage-06/lesson-01-source-hierarchy-and-data-to-instruction-crossing",
+      "brief": "Lesson 1 — Source Hierarchy and Data-to-Instruction Crossing\nStage 6 — Instruction Boundaries and Prompt-Injection Foundations\nObjective: Recognize the moment content is wrongly treated as authority.\nCore: Contrast a user request, system policy, ticket text, and a search snippet. The lab tests interpretation of content, not whether the content contains suspicious words.\nPractice / evidence: Classify passages as authorized instructions, task data, or uncertain provenance."
+    },
+    {
+      "order": 28,
+      "stage": 6,
+      "lesson": 2,
+      "title": "Direct, Indirect, and Tool-Mediated Injection",
+      "directory": "lessons/stage-06/lesson-02-direct-indirect-and-tool-mediated-injection",
+      "brief": "Lesson 2 — Direct, Indirect, and Tool-Mediated Injection\nStage 6 — Instruction Boundaries and Prompt-Injection Foundations\nObjective: Separate entry point from the action the attacker wants.\nCore: Show how the same proposed deviation can be placed in a user-facing message, a retrieved article, or a tool response, with different trust consequences.\nPractice / evidence: Build a matrix of placement, reachability, and expected boundary."
+    },
+    {
+      "order": 29,
+      "stage": 6,
+      "lesson": 3,
+      "title": "Authority Claims and Task-Completion Pretexts",
+      "directory": "lessons/stage-06/lesson-03-authority-claims-and-task-completion-pretexts",
+      "brief": "Lesson 3 — Authority Claims and Task-Completion Pretexts\nStage 6 — Instruction Boundaries and Prompt-Injection Foundations\nObjective: Recognize claims of urgency or policy authority as data when they originate from low-trust material.\nCore: Examine an invented ticket note claiming that an extra account update is required before resolution. Record whether the agent verifies that claim through an approved channel.\nPractice / evidence: Run two synthetic variants and identify the earliest compromised decision."
+    },
+    {
+      "order": 30,
+      "stage": 6,
+      "lesson": 4,
+      "title": "Lab: Ticket-Body Injection",
+      "directory": "lessons/stage-06/lesson-04-lab-ticket-body-injection",
+      "brief": "Lesson 4 — Lab: Ticket-Body Injection\nStage 6 — Instruction Boundaries and Prompt-Injection Foundations\nObjective: Test a controlled attempt to redirect the service-desk task.\nCore: Insert an attacker-authored instruction into the fictional ticket body requesting an unauthorized dummy-record change. Compare against an otherwise identical benign ticket.\nPractice / evidence: Capture the ticket, proposed plan, tool request, gateway decision, final record state, and a clear success/failure verdict."
+    },
+    {
+      "order": 31,
+      "stage": 6,
+      "lesson": 5,
+      "title": "Boundary Defenses and Retest",
+      "directory": "lessons/stage-06/lesson-05-boundary-defenses-and-retest",
+      "brief": "Lesson 5 — Boundary Defenses and Retest\nStage 6 — Instruction Boundaries and Prompt-Injection Foundations\nObjective: Evaluate whether source tagging and action policy contain the deviation.\nCore: Mark ticket bodies as untrusted, constrain action authorization to the actual user's task, and check gateway decisions regardless of model confidence.\nPractice / evidence: Rerun the same and one paraphrased case; record both safety and task completion."
+    },
+    {
+      "order": 32,
+      "stage": 7,
+      "lesson": 1,
+      "title": "Goal Integrity Across Turns",
+      "directory": "lessons/stage-07/lesson-01-goal-integrity-across-turns",
+      "brief": "Lesson 1 — Goal Integrity Across Turns\nStage 7 — Multi-Turn Goal Hijacking and Instruction Override\nObjective: Track the original user goal after intermediate observations.\nCore: Introduce goal ledger entries: user intent, allowed subgoals, evidence of completion, and newly proposed work. Distinguish clarification from unauthorized scope expansion.\nPractice / evidence: Label a six-event plan as consistent, uncertain, or divergent."
+    },
+    {
+      "order": 33,
+      "stage": 7,
+      "lesson": 2,
+      "title": "Gradual Redirection and Benign–Malicious Blending",
+      "directory": "lessons/stage-07/lesson-02-gradual-redirection-and-benign-malicious-blending",
+      "brief": "Lesson 2 — Gradual Redirection and Benign–Malicious Blending\nStage 7 — Multi-Turn Goal Hijacking and Instruction Override\nObjective: Detect when an apparently helpful intermediate step smuggles in a new objective.\nCore: Explore staged text in ticket comments or search results: first a reasonable troubleshooting step, then an unrelated record edit framed as a prerequisite.\nPractice / evidence: Document the exact turn at which the agent starts treating the attacker objective as part of the job."
+    },
+    {
+      "order": 34,
+      "stage": 7,
+      "lesson": 3,
+      "title": "Lab: Turn-by-Turn Goal Drift",
+      "directory": "lessons/stage-07/lesson-03-lab-turn-by-turn-goal-drift",
+      "brief": "Lesson 3 — Lab: Turn-by-Turn Goal Drift\nStage 7 — Multi-Turn Goal Hijacking and Instruction Override\nObjective: Reproduce a gradual deviation in the local simulator.\nCore: Supply controlled low-trust observations at two predetermined points. Keep the legitimate user task and initial state unchanged between test and control.\nPractice / evidence: Submit a turn-indexed trace showing goal, plan change, proposed tool calls, and final outcome."
+    },
+    {
+      "order": 35,
+      "stage": 7,
+      "lesson": 4,
+      "title": "Recovery, Clarification, and Boundary Reassertion",
+      "directory": "lessons/stage-07/lesson-04-recovery-clarification-and-boundary-reassertion",
+      "brief": "Lesson 4 — Recovery, Clarification, and Boundary Reassertion\nStage 7 — Multi-Turn Goal Hijacking and Instruction Override\nObjective: Compare a vulnerable continuation with a controlled recovery.\nCore: Add explicit user-goal confirmation before sensitive action and require a gateway check for each step; test whether the agent can continue the legitimate task safely.\nPractice / evidence: Show an authorized completion or justified stop, not merely an indiscriminate refusal."
+    },
+    {
+      "order": 36,
+      "stage": 7,
+      "lesson": 5,
+      "title": "Assessment: Multi-Turn Hypothesis Review",
+      "directory": "lessons/stage-07/lesson-05-assessment-multi-turn-hypothesis-review",
+      "brief": "Lesson 5 — Assessment: Multi-Turn Hypothesis Review\nStage 7 — Multi-Turn Goal Hijacking and Instruction Override\nObjective: Defend a finding with a complete chain of evidence.\nCore: Review drift, attempted action, executed action, and whether later turns amplify or undo the error. Distinguish a single suspicious utterance from a proven sequence failure.\nPractice / evidence: Deliver one reproducible timeline and an alternative explanation considered and rejected."
+    },
+    {
+      "order": 37,
+      "stage": 8,
+      "lesson": 1,
+      "title": "Planning as a Security Boundary",
+      "directory": "lessons/stage-08/lesson-01-planning-as-a-security-boundary",
+      "brief": "Lesson 1 — Planning as a Security Boundary\nStage 8 — Planning and Task- Decomposition Attacks\nObjective: Explain why a plan is not automatically an authorized action list.\nCore: Review how agents turn retrieved facts into subgoals and how a corrupted subgoal can steer several later calls, even when no single call looks exceptional.\nPractice / evidence: Compare an approved plan with a plan derived from adversarial ticket content."
+    },
+    {
+      "order": 38,
+      "stage": 8,
+      "lesson": 2,
+      "title": "Dependency Traps and False Prerequisites",
+      "directory": "lessons/stage-08/lesson-02-dependency-traps-and-false-prerequisites",
+      "brief": "Lesson 2 — Dependency Traps and False Prerequisites\nStage 8 — Planning and Task- Decomposition Attacks\nObjective: Identify 'do this first' claims that introduce unauthorized work.\nCore: Use fictional troubleshooting material claiming an unrelated account-label change is necessary to resolve a printer ticket; keep the attack inside the sandbox.\nPractice / evidence: Mark the false dependency and write an invariant preventing the extra edit."
+    },
+    {
+      "order": 39,
+      "stage": 8,
+      "lesson": 3,
+      "title": "Lab: Plan Contamination and Branch Choice",
+      "directory": "lessons/stage-08/lesson-03-lab-plan-contamination-and-branch-choice",
+      "brief": "Lesson 3 — Lab: Plan Contamination and Branch Choice\nStage 8 — Planning and Task- Decomposition Attacks\nObjective: Test if a poisoned knowledge-base excerpt changes the agent's task tree.\nCore: Compare clean and poisoned excerpts while holding the user request fixed. Evaluate branch selection, attempted edits, gateway blocks, and eventual task outcome.\nPractice / evidence: Submit side-by-side plan trees and trace-backed conclusions."
+    },
+    {
+      "order": 40,
+      "stage": 8,
+      "lesson": 4,
+      "title": "Plan Validation and Stopping Rules",
+      "directory": "lessons/stage-08/lesson-04-plan-validation-and-stopping-rules",
+      "brief": "Lesson 4 — Plan Validation and Stopping Rules\nStage 8 — Planning and Task- Decomposition Attacks\nObjective: Design defenses that reject out-of-scope steps without blocking necessary work.\nCore: Require the plan to link each side-effecting step to user authorization; impose depth limits and verify termination against the original request.\nPractice / evidence: Retest the poisoned case and a legitimate multi-step control."
+    },
+    {
+      "order": 41,
+      "stage": 9,
+      "lesson": 1,
+      "title": "Tool Results Are Evidence, Not Orders",
+      "directory": "lessons/stage-09/lesson-01-tool-results-are-evidence-not-orders",
+      "brief": "Lesson 1 — Tool Results Are Evidence, Not Orders\nStage 9 — Tool-Response and Retrieval-Surface Poisoning\nObjective: Distinguish tool execution trust from tool-output content trust.\nCore: A permitted search may return attacker-authored prose. Examine where retrieved content enters the plan and why the gateway's successful read does not endorse the retrieved text.\nPractice / evidence: Annotate content origin and authority at each ingestion point."
+    },
+    {
+      "order": 42,
+      "stage": 9,
+      "lesson": 2,
+      "title": "Structured Fields, Free Text, and Metadata",
+      "directory": "lessons/stage-09/lesson-02-structured-fields-free-text-and-metadata",
+      "brief": "Lesson 2 — Structured Fields, Free Text, and Metadata\nStage 9 — Tool-Response and Retrieval-Surface Poisoning\nObjective: Identify injection-friendly locations in a result object.\nCore: Compare a typed ticket ID with a free-text description, citation label, summary, or embedded 'operator note'; identify which fields the agent relies on most.\nPractice / evidence: Produce a field-level trust map for two mock tools."
+    },
+    {
+      "order": 43,
+      "stage": 9,
+      "lesson": 3,
+      "title": "Lab: Poisoned Search Snippet",
+      "directory": "lessons/stage-09/lesson-03-lab-poisoned-search-snippet",
+      "brief": "Lesson 3 — Lab: Poisoned Search Snippet\nStage 9 — Tool-Response and Retrieval-Surface Poisoning\nObjective: See whether a retrieved passage redirects an unrelated support workflow.\nCore: Replace one synthetic search result with a passage mixing useful troubleshooting data and a request for an unapproved action. Preserve the rest of the response.\nPractice / evidence: Record whether the agent extracts the useful fact, follows the injected instruction, both, or neither."
+    },
+    {
+      "order": 44,
+      "stage": 9,
+      "lesson": 4,
+      "title": "Lab: Tool-Result Laundering",
+      "directory": "lessons/stage-09/lesson-04-lab-tool-result-laundering",
+      "brief": "Lesson 4 — Lab: Tool-Result Laundering\nStage 9 — Tool-Response and Retrieval-Surface Poisoning\nObjective: Test whether formatting makes low-trust instructions appear like tool or policy metadata.\nCore: Place an invented 'processing requirement' in a mock tool response; compare ordinary prose with a structured-looking version. Do not change the actual gateway policy.\nPractice / evidence: Provide matched traces, a field-level hypothesis, and executed-versus-blocked outcome."
+    },
+    {
+      "order": 45,
+      "stage": 9,
+      "lesson": 5,
+      "title": "Source-Aware Parsing and Retest",
+      "directory": "lessons/stage-09/lesson-05-source-aware-parsing-and-retest",
+      "brief": "Lesson 5 — Source-Aware Parsing and Retest\nStage 9 — Tool-Response and Retrieval-Surface Poisoning\nObjective: Reduce inappropriate promotion of source content into commands.\nCore: Keep retrieved text as cited evidence, parse required fields with schema checks, and have independent controls authorize side effects. Assess whether useful retrieval still works.\nPractice / evidence: Rerun both poisoned and clean searches; summarize utility and security trade-offs."
+    },
+    {
+      "order": 46,
+      "stage": 10,
+      "lesson": 1,
+      "title": "From Text to Tool Selection",
+      "directory": "lessons/stage-10/lesson-01-from-text-to-tool-selection",
+      "brief": "Lesson 1 — From Text to Tool Selection\nStage 10 — Tool-Call Exploitation and Argument Safety\nObjective: Identify when an agent chooses a side-effecting tool unnecessarily.\nCore: Compare read, draft, send, and update operations in HarborDesk; describe what evidence should justify each transition.\nPractice / evidence: Mark over-privileged tool choices in a sample trace."
+    },
+    {
+      "order": 47,
+      "stage": 10,
+      "lesson": 2,
+      "title": "Arguments, Targets, and Scope",
+      "directory": "lessons/stage-10/lesson-02-arguments-targets-and-scope",
+      "brief": "Lesson 2 — Arguments, Targets, and Scope\nStage 10 — Tool-Call Exploitation and Argument Safety\nObjective: Assess recipient, record ID, tenant, and content fields independently.\nCore: A legitimate tool name can still carry an unauthorized target or payload. Map allowed values to the current user's request and fixture ownership.\nPractice / evidence: Write gateway checks for target ownership, approved recipients, and mandatory approvals."
+    },
+    {
+      "order": 48,
+      "stage": 10,
+      "lesson": 3,
+      "title": "Lab: Unauthorized Record Target",
+      "directory": "lessons/stage-10/lesson-03-lab-unauthorized-record-target",
+      "brief": "Lesson 3 — Lab: Unauthorized Record Target\nStage 10 — Tool-Call Exploitation and Argument Safety\nObjective: Test whether an injected ticket comment can steer a permitted update tool toward the wrong synthetic record.\nCore: Hold the intended ticket constant while introducing an attacker-supplied alternate record ID; compare requested and executed arguments.\nPractice / evidence: Submit the proposed call, gateway response, and before/after records."
+    },
+    {
+      "order": 49,
+      "stage": 10,
+      "lesson": 4,
+      "title": "Lab: Draft-to-Send Boundary",
+      "directory": "lessons/stage-10/lesson-04-lab-draft-to-send-boundary",
+      "brief": "Lesson 4 — Lab: Draft-to-Send Boundary\nStage 10 — Tool-Call Exploitation and Argument Safety\nObjective: Test whether preparing a harmless draft becomes unapproved simulated delivery.\nCore: In the local-only outbox, examine an instruction that reframes sending as required for verification. Explicitly distinguish draft creation, send request, gateway denial, and outbox entry.\nPractice / evidence: Provide a four-state action trace and outcome classification."
+    },
+    {
+      "order": 50,
+      "stage": 10,
+      "lesson": 5,
+      "title": "Defensive Argument Validation",
+      "directory": "lessons/stage-10/lesson-05-defensive-argument-validation",
+      "brief": "Lesson 5 — Defensive Argument Validation\nStage 10 — Tool-Call Exploitation and Argument Safety\nObjective: Show that controls on tool arguments survive changes in wording.\nCore: Add deterministic allowlists, scope checks, and approval tokens at the action gateway. Repeat tests using new phrasing without changing the policy.\nPractice / evidence: Submit an allowed control case and two denied misuse cases."
+    },
+    {
+      "order": 51,
+      "stage": 11,
+      "lesson": 1,
+      "title": "Composition Risk: Read, Transform, Act",
+      "directory": "lessons/stage-11/lesson-01-composition-risk-read-transform-act",
+      "brief": "Lesson 1 — Composition Risk: Read, Transform, Act\nStage 11 — Unsafe Affordance Chaining\nObjective: Recognize harmful combinations that a single-tool review misses.\nCore: Model a sequence that reads a dummy profile, summarizes it, and tries to place the summary in an unapproved outbox message; each transition needs its own authority check.\nPractice / evidence: Draw a three-hop action graph and mark the prohibited edge."
+    },
+    {
+      "order": 52,
+      "stage": 11,
+      "lesson": 2,
+      "title": "Hidden Dependencies and Privilege Pivoting",
+      "directory": "lessons/stage-11/lesson-02-hidden-dependencies-and-privilege-pivoting",
+      "brief": "Lesson 2 — Hidden Dependencies and Privilege Pivoting\nStage 11 — Unsafe Affordance Chaining\nObjective: Test whether a low-risk step creates an opportunity for a higher-risk step.\nCore: Examine staged actions such as look up → write memory → later update record, or draft → seek approval → send; identify the pivot where permissions change.\nPractice / evidence: Define preconditions and a security invariant for two chains."
+    },
+    {
+      "order": 53,
+      "stage": 11,
+      "lesson": 3,
+      "title": "Lab: Tool Chain Under Attacker Influence",
+      "directory": "lessons/stage-11/lesson-03-lab-tool-chain-under-attacker-influence",
+      "brief": "Lesson 3 — Lab: Tool Chain Under Attacker Influence\nStage 11 — Unsafe Affordance Chaining\nObjective: Observe a multi-step attempt without using external systems.\nCore: Inject a controlled request into a synthetic help article to induce a read followed by an unnecessary update. Measure whether the gateway blocks the update even after a valid read.\nPractice / evidence: Collect ordered events, state deltas, and hop-level verdicts."
+    },
+    {
+      "order": 54,
+      "stage": 11,
+      "lesson": 4,
+      "title": "Lab: Chaining Across a Delayed Task",
+      "directory": "lessons/stage-11/lesson-04-lab-chaining-across-a-delayed-task",
+      "brief": "Lesson 4 — Lab: Chaining Across a Delayed Task\nStage 11 — Unsafe Affordance Chaining\nObjective: Test a chain that spans separate requests and relies on a persisted intermediate state.\nCore: Run one session that writes an attacker-influenced memory summary, reset only ephemeral context, then start a different legitimate ticket. Keep durable state visible for analysis.\nPractice / evidence: Demonstrate whether the later session reads the poisoned state and attempts an unauthorized action."
+    },
+    {
+      "order": 55,
+      "stage": 11,
+      "lesson": 5,
+      "title": "Cut Sets and Defense in Depth",
+      "directory": "lessons/stage-11/lesson-05-cut-sets-and-defense-in-depth",
+      "brief": "Lesson 5 — Cut Sets and Defense in Depth\nStage 11 — Unsafe Affordance Chaining\nObjective: Place controls where they break the chain with minimal task disruption.\nCore: Compare filtering the original text, narrowing memory write permissions, validating the later action, and requiring approval. Do not treat a blocked call as an executed compromise.\nPractice / evidence: Retest and record which edge is cut, with a benign task control."
+    },
+    {
+      "order": 56,
+      "stage": 12,
+      "lesson": 1,
+      "title": "Discovery, Descriptions, and Capability Claims",
+      "directory": "lessons/stage-12/lesson-01-discovery-descriptions-and-capability-claims",
+      "brief": "Lesson 1 — Discovery, Descriptions, and Capability Claims\nStage 12 — Dynamic Tools, Registries, and Tool Descriptions\nObjective: Separate tool metadata from verified permissions.\nCore: Examine mock registry entries that describe tools, inputs, and supposed safety properties. A description can influence agent selection but does not enforce authorization.\nPractice / evidence: Mark claims that must be independently verified by the gateway."
+    },
+    {
+      "order": 57,
+      "stage": 12,
+      "lesson": 2,
+      "title": "Registry Drift and Malicious Description Changes",
+      "directory": "lessons/stage-12/lesson-02-registry-drift-and-malicious-description-changes",
+      "brief": "Lesson 2 — Registry Drift and Malicious Description Changes\nStage 12 — Dynamic Tools, Registries, and Tool Descriptions\nObjective: Detect how a modified description could steer the agent's behavior.\nCore: Change only a synthetic tool description so it encourages an unrelated record edit; keep executable tool code and policy fixed.\nPractice / evidence: Compare chosen tools before and after the catalog change."
+    },
+    {
+      "order": 58,
+      "stage": 12,
+      "lesson": 3,
+      "title": "Lab: Dynamic Tool-Selection Test",
+      "directory": "lessons/stage-12/lesson-03-lab-dynamic-tool-selection-test",
+      "brief": "Lesson 3 — Lab: Dynamic Tool-Selection Test\nStage 12 — Dynamic Tools, Registries, and Tool Descriptions\nObjective: Verify whether tool discovery influences attempted actions.\nCore: Present a benign versus adversarial catalog snapshot to the same agent task. Record proposed calls, argument differences, gateway decisions, and task completion.\nPractice / evidence: Submit paired traces and catalog diffs."
+    },
+    {
+      "order": 59,
+      "stage": 12,
+      "lesson": 4,
+      "title": "Registry Governance and Verification",
+      "directory": "lessons/stage-12/lesson-04-registry-governance-and-verification",
+      "brief": "Lesson 4 — Registry Governance and Verification\nStage 12 — Dynamic Tools, Registries, and Tool Descriptions\nObjective: Propose defenses for mutable tool environments.\nCore: Recommend pinned tool identities, approved catalogs, capability scoping, change reviews, and action-layer enforcement; assess whether the agent can still complete legitimate tasks.\nPractice / evidence: Produce a one-page registry policy and a defensive retest."
+    },
+    {
+      "order": 60,
+      "stage": 13,
+      "lesson": 1,
+      "title": "User, Agent, Tool, and Service Identities",
+      "directory": "lessons/stage-13/lesson-01-user-agent-tool-and-service-identities",
+      "brief": "Lesson 1 — User, Agent, Tool, and Service Identities\nStage 13 — Identity, Privilege, and Authorization Boundaries\nObjective: Distinguish who requested an action from who technically executes it.\nCore: Map end-user authority, orchestrator identity, specialist-agent identity, and service-account capability. Delegation must not expand permission silently.\nPractice / evidence: Build a principal-to-action matrix for HarborDesk."
+    },
+    {
+      "order": 61,
+      "stage": 13,
+      "lesson": 2,
+      "title": "Scope Confusion and Confused-Deputy Behavior",
+      "directory": "lessons/stage-13/lesson-02-scope-confusion-and-confused-deputy-behavior",
+      "brief": "Lesson 2 — Scope Confusion and Confused-Deputy Behavior\nStage 13 — Identity, Privilege, and Authorization Boundaries\nObjective: Recognize an agent using its own access for an unauthorized third-party goal.\nCore: Compare a legitimate user-approved lookup with a ticket author's request to inspect another synthetic user's profile. Specify where scope should be checked.\nPractice / evidence: Write two concrete allow/deny cases with reason codes."
+    },
+    {
+      "order": 62,
+      "stage": 13,
+      "lesson": 3,
+      "title": "Lab: Privilege Boundary Test",
+      "directory": "lessons/stage-13/lesson-03-lab-privilege-boundary-test",
+      "brief": "Lesson 3 — Lab: Privilege Boundary Test\nStage 13 — Identity, Privilege, and Authorization Boundaries\nObjective: Assess cross-user or cross-role record access in the simulation.\nCore: Present a task-data instruction to act on a record outside the user's synthetic scope; observe proposed call, gateway decision, and any state change.\nPractice / evidence: Prove whether the policy enforced ownership even if the agent requested the action."
+    },
+    {
+      "order": 63,
+      "stage": 13,
+      "lesson": 4,
+      "title": "Short-Lived Grants and Retest",
+      "directory": "lessons/stage-13/lesson-04-short-lived-grants-and-retest",
+      "brief": "Lesson 4 — Short-Lived Grants and Retest\nStage 13 — Identity, Privilege, and Authorization Boundaries\nObjective: Assess whether approvals are narrow enough for a specific action.\nCore: Model a one-action approval tied to principal, target, operation, and expiry; attempt reuse against another synthetic record or later run.\nPractice / evidence: Deliver the permission matrix, negative tests, and authorized control case."
+    },
+    {
+      "order": 64,
+      "stage": 14,
+      "lesson": 1,
+      "title": "Memory Types and Lifetimes",
+      "directory": "lessons/stage-14/lesson-01-memory-types-and-lifetimes",
+      "brief": "Lesson 1 — Memory Types and Lifetimes\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Identify working, session, per-user, shared, and durable memory.\nCore: Explain how scope and retention alter risk. A sentence that is innocuous in one ticket may become a standing instruction if summarized into long-lived memory.\nPractice / evidence: Classify HarborDesk memory stores by reader, writer, tenant, and expiry."
+    },
+    {
+      "order": 65,
+      "stage": 14,
+      "lesson": 2,
+      "title": "Write Paths and Summarization Loss",
+      "directory": "lessons/stage-14/lesson-02-write-paths-and-summarization-loss",
+      "brief": "Lesson 2 — Write Paths and Summarization Loss\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Identify where provenance disappears during summarization.\nCore: Trace ticket prose → agent summary → memory record → future retrieved context. Note whether origin and confidence survive the transformation.\nPractice / evidence: Compare source text with the resulting memory record and mark missing provenance."
+    },
+    {
+      "order": 66,
+      "stage": 14,
+      "lesson": 3,
+      "title": "Poisoning Hypotheses and Controls",
+      "directory": "lessons/stage-14/lesson-03-poisoning-hypotheses-and-controls",
+      "brief": "Lesson 3 — Poisoning Hypotheses and Controls\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Formulate a falsifiable persistence test.\nCore: Distinguish a single-session effect from durable influence and cross-user propagation. State what the agent should remember and what it must never treat as standing permission.\nPractice / evidence: Draft scenario cards for per-user and shared-memory attempts."
+    },
+    {
+      "order": 67,
+      "stage": 14,
+      "lesson": 4,
+      "title": "Lab: Plant a Synthetic Memory Entry",
+      "directory": "lessons/stage-14/lesson-04-lab-plant-a-synthetic-memory-entry",
+      "brief": "Lesson 4 — Lab: Plant a Synthetic Memory Entry\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Determine whether a low-trust instruction is stored as authoritative memory.\nCore: Place controlled adversarial prose in a fictional ticket, allow the agent to summarize, and inspect the written memory record rather than trusting only the final response.\nPractice / evidence: Save the original source, memory write event, stored record, and provenance labels."
+    },
+    {
+      "order": 68,
+      "stage": 14,
+      "lesson": 5,
+      "title": "Lab: Cross-Session Activation",
+      "directory": "lessons/stage-14/lesson-05-lab-cross-session-activation",
+      "brief": "Lesson 5 — Lab: Cross-Session Activation\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Establish whether poisoning survives a new session and affects an unrelated task.\nCore: End the first run, start a distinct legitimate request, and observe memory retrieval, plan changes, tool attempts, and state. Repeat with a clean memory control.\nPractice / evidence: Present a two-session timeline demonstrating persistence or its absence."
+    },
+    {
+      "order": 69,
+      "stage": 14,
+      "lesson": 6,
+      "title": "Scoping, Expiry, Rollback, and Retest",
+      "directory": "lessons/stage-14/lesson-06-scoping-expiry-rollback-and-retest",
+      "brief": "Lesson 6 — Scoping, Expiry, Rollback, and Retest\nStage 14 — Memory and Persistent- State Poisoning\nObjective: Prevent or remediate durable unauthorized influence.\nCore: Require source attribution, memory-write policy, per-user scoping, expiration, review for privileged memory, and rollback of suspect entries. Verify clean functionality remains.\nPractice / evidence: Rerun the attack and a benign personalization task; report both outcomes."
+    },
+    {
+      "order": 70,
+      "stage": 15,
+      "lesson": 1,
+      "title": "Retrieval Pipeline and Provenance",
+      "directory": "lessons/stage-15/lesson-01-retrieval-pipeline-and-provenance",
+      "brief": "Lesson 1 — Retrieval Pipeline and Provenance\nStage 15 — Knowledge Bases, Retrieval, and Shared-State Integrity\nObjective: Map ingestion, indexing, retrieval, citation, and use in decisions.\nCore: Separate the trustworthiness of the search mechanism from the authorship and recency of its returned documents.\nPractice / evidence: Label source ownership and provenance loss in a sample search trace."
+    },
+    {
+      "order": 71,
+      "stage": 15,
+      "lesson": 2,
+      "title": "Shared Knowledge as an Amplifier",
+      "directory": "lessons/stage-15/lesson-02-shared-knowledge-as-an-amplifier",
+      "brief": "Lesson 2 — Shared Knowledge as an Amplifier\nStage 15 — Knowledge Bases, Retrieval, and Shared-State Integrity\nObjective: Explain why one poisoned passage can affect many future tasks.\nCore: Compare a ticket-specific snippet with a shared help article consulted by multiple agents. Consider stale versions and inconsistent copies.\nPractice / evidence: Draw the blast radius for both cases."
+    },
+    {
+      "order": 72,
+      "stage": 15,
+      "lesson": 3,
+      "title": "Lab: Poisoned Knowledge Article",
+      "directory": "lessons/stage-15/lesson-03-lab-poisoned-knowledge-article",
+      "brief": "Lesson 3 — Lab: Poisoned Knowledge Article\nStage 15 — Knowledge Bases, Retrieval, and Shared-State Integrity\nObjective: Test whether a synthetic article alters an unrelated workflow.\nCore: Replace one local article with a manipulated version that retains useful facts but adds an unauthorized workflow requirement. Preserve article ID and retrieval conditions.\nPractice / evidence: Collect retrieved rank, selected excerpt, plan, and action trace."
+    },
+    {
+      "order": 73,
+      "stage": 15,
+      "lesson": 4,
+      "title": "Lab: Shared-Store Propagation",
+      "directory": "lessons/stage-15/lesson-04-lab-shared-store-propagation",
+      "brief": "Lesson 4 — Lab: Shared-Store Propagation\nStage 15 — Knowledge Bases, Retrieval, and Shared-State Integrity\nObjective: Measure whether two independent requests consume the same corrupted content.\nCore: Execute distinct legitimate tasks after one local-index change; inspect each agent's evidence use and avoid attributing changes to unrelated run variation.\nPractice / evidence: Provide a per-request propagation table and state comparison."
+    },
+    {
+      "order": 74,
+      "stage": 15,
+      "lesson": 5,
+      "title": "Ingestion Review and Defensive Retest",
+      "directory": "lessons/stage-15/lesson-05-ingestion-review-and-defensive-retest",
+      "brief": "Lesson 5 — Ingestion Review and Defensive Retest\nStage 15 — Knowledge Bases, Retrieval, and Shared-State Integrity\nObjective: Reduce unauthorized influence without discarding useful documents.\nCore: Add source ownership checks, versioning, content review, citations, and action-layer validation. Test a clean article and the poisoned variant.\nPractice / evidence: Deliver ingestion-control recommendations and before/after results."
+    },
+    {
+      "order": 75,
+      "stage": 16,
+      "lesson": 1,
+      "title": "Delegation Contracts and Role Boundaries",
+      "directory": "lessons/stage-16/lesson-01-delegation-contracts-and-role-boundaries",
+      "brief": "Lesson 1 — Delegation Contracts and Role Boundaries\nStage 16 — Agent Handoffs and Cross-Agent Message Integrity\nObjective: Specify what an orchestrator may ask a specialist to do.\nCore: Distinguish evidence gathering from approval and execution; describe why a research agent's conclusion does not authorize an action agent's write.\nPractice / evidence: Create a simple handoff contract with required fields and allowed operations."
+    },
+    {
+      "order": 76,
+      "stage": 16,
+      "lesson": 2,
+      "title": "Sender Identity and Message Authenticity",
+      "directory": "lessons/stage-16/lesson-02-sender-identity-and-message-authenticity",
+      "brief": "Lesson 2 — Sender Identity and Message Authenticity\nStage 16 — Agent Handoffs and Cross-Agent Message Integrity\nObjective: Distinguish a verified agent message from text merely claiming to be one.\nCore: Model sender ID, correlation ID, delegated task, scope, and provenance; identify where an attacker-controlled ticket or bus message might spoof these fields.\nPractice / evidence: Audit three example messages for missing validation."
+    },
+    {
+      "order": 77,
+      "stage": 16,
+      "lesson": 3,
+      "title": "Lab: Spoofed Specialist Recommendation",
+      "directory": "lessons/stage-16/lesson-03-lab-spoofed-specialist-recommendation",
+      "brief": "Lesson 3 — Lab: Spoofed Specialist Recommendation\nStage 16 — Agent Handoffs and Cross-Agent Message Integrity\nObjective: Test a forged local-bus message claiming a privileged recommendation.\nCore: Inject a synthetic message into the controlled test bus and compare it with a properly signed or otherwise authenticated fixture. Track proposed downstream action, not just language.\nPractice / evidence: Save message envelope, verification event, action request, and gateway verdict."
+    },
+    {
+      "order": 78,
+      "stage": 16,
+      "lesson": 4,
+      "title": "Lab: Handoff Context Loss",
+      "directory": "lessons/stage-16/lesson-04-lab-handoff-context-loss",
+      "brief": "Lesson 4 — Lab: Handoff Context Loss\nStage 16 — Agent Handoffs and Cross-Agent Message Integrity\nObjective: Test whether delegation omits the original user's constraints.\nCore: Send the same legitimate task to a specialist with full versus truncated authorization context. Determine whether a low-trust instruction fills the gap.\nPractice / evidence: Compare handoff payloads, conclusions, and action attempts."
+    },
+    {
+      "order": 79,
+      "stage": 16,
+      "lesson": 5,
+      "title": "Handoff Validation and Retest",
+      "directory": "lessons/stage-16/lesson-05-handoff-validation-and-retest",
+      "brief": "Lesson 5 — Handoff Validation and Retest\nStage 16 — Agent Handoffs and Cross-Agent Message Integrity\nObjective: Preserve provenance, scope, and authorization across agents.\nCore: Require authenticated envelopes, least-privilege delegation, clear task IDs, original user constraints, and gateway checks on specialist outputs.\nPractice / evidence: Retest both attacks and one clean handoff; publish the revised message contract."
+    },
+    {
+      "order": 80,
+      "stage": 17,
+      "lesson": 1,
+      "title": "Distinguishing Coordination from Correlated Error",
+      "directory": "lessons/stage-17/lesson-01-distinguishing-coordination-from-correlated-error",
+      "brief": "Lesson 1 — Distinguishing Coordination from Correlated Error\nStage 17 — Multi-Agent Manipulation and Apparent Collusion\nObjective: Describe how several agents can reinforce one poisoned claim.\nCore: One manipulated source can influence research, review, and action agents. 'Collusion' in this course refers to observed alignment toward an unauthorized outcome, not proof of intent.\nPractice / evidence: Mark shared inputs and independent checks in a multi-agent trace."
+    },
+    {
+      "order": 81,
+      "stage": 17,
+      "lesson": 2,
+      "title": "Shared-Context Feedback Loops",
+      "directory": "lessons/stage-17/lesson-02-shared-context-feedback-loops",
+      "brief": "Lesson 2 — Shared-Context Feedback Loops\nStage 17 — Multi-Agent Manipulation and Apparent Collusion\nObjective: Identify how an agent's output becomes another agent's trusted input.\nCore: Examine researcher summary → reviewer acceptance → action-agent proposal → summary written back to shared state. Identify where false agreement can be created.\nPractice / evidence: Annotate feedback edges and missing provenance."
+    },
+    {
+      "order": 82,
+      "stage": 17,
+      "lesson": 3,
+      "title": "Lab: Two-Agent Reinforcement",
+      "directory": "lessons/stage-17/lesson-03-lab-two-agent-reinforcement",
+      "brief": "Lesson 3 — Lab: Two-Agent Reinforcement\nStage 17 — Multi-Agent Manipulation and Apparent Collusion\nObjective: Test whether one poisoned KB result is amplified by a second agent.\nCore: Run the same support request in single-agent and two-agent configurations while controlling the retrieved passage. Compare authority claims and proposed actions.\nPractice / evidence: Present paired traces and explain any additional risk introduced by handoff."
+    },
+    {
+      "order": 83,
+      "stage": 17,
+      "lesson": 4,
+      "title": "Lab: Message-Bus Manipulation Scenario",
+      "directory": "lessons/stage-17/lesson-04-lab-message-bus-manipulation-scenario",
+      "brief": "Lesson 4 — Lab: Message-Bus Manipulation Scenario\nStage 17 — Multi-Agent Manipulation and Apparent Collusion\nObjective: Test synthetic cross-agent instruction tampering under controlled conditions.\nCore: Replace one message in the local bus with an attacker-controlled version that requests an out-of-scope dummy action. Inspect authentication, downstream planning, gateway outcome, and state.\nPractice / evidence: Deliver the manipulated envelope, event chain, and causal attribution."
+    },
+    {
+      "order": 84,
+      "stage": 17,
+      "lesson": 5,
+      "title": "Independent Checks and Containment",
+      "directory": "lessons/stage-17/lesson-05-independent-checks-and-containment",
+      "brief": "Lesson 5 — Independent Checks and Containment\nStage 17 — Multi-Agent Manipulation and Apparent Collusion\nObjective: Break group-level amplification.\nCore: Introduce independent evidence lookup, verified sender identity, per-agent tool scopes, and explicit authorization on side effects; then rerun both labs.\nPractice / evidence: Record changes in propagation depth and legitimate task utility."
+    },
+    {
+      "order": 85,
+      "stage": 18,
+      "lesson": 1,
+      "title": "Where Approval Belongs",
+      "directory": "lessons/stage-18/lesson-01-where-approval-belongs",
+      "brief": "Lesson 1 — Where Approval Belongs\nStage 18 — Human Oversight, Approvals, and Social Engineering of Operators\nObjective: Identify irreversible, sensitive, or out-of-scope actions requiring a genuine approval boundary.\nCore: Compare previewing a draft, approving a specific send, and approving a blanket workflow. Match approvals to operation, target, and time window.\nPractice / evidence: Classify sample HarborDesk actions by approval requirement."
+    },
+    {
+      "order": 86,
+      "stage": 18,
+      "lesson": 2,
+      "title": "Misleading Summaries and Confirmation Traps",
+      "directory": "lessons/stage-18/lesson-02-misleading-summaries-and-confirmation-traps",
+      "brief": "Lesson 2 — Misleading Summaries and Confirmation Traps\nStage 18 — Human Oversight, Approvals, and Social Engineering of Operators\nObjective: Detect when an agent's explanation obscures material tool arguments.\nCore: A friendly 'routine follow-up' summary can mask an unapproved target. The operator needs verifiable diff, recipient, content, and intended side effect.\nPractice / evidence: Rewrite an inadequate approval screen to show material facts."
+    },
+    {
+      "order": 87,
+      "stage": 18,
+      "lesson": 3,
+      "title": "Lab: Approval-Queue Review",
+      "directory": "lessons/stage-18/lesson-03-lab-approval-queue-review",
+      "brief": "Lesson 3 — Lab: Approval-Queue Review\nStage 18 — Human Oversight, Approvals, and Social Engineering of Operators\nObjective: Assess a simulated reviewer decision using complete versus incomplete context.\nCore: Present fictional requests with ambiguous natural-language summaries and explicit machine-readable action details. Record decisions and error modes; never send real communications.\nPractice / evidence: Produce reviewer notes and a decision log with rationales."
+    },
+    {
+      "order": 88,
+      "stage": 18,
+      "lesson": 4,
+      "title": "Approval Controls and Exception Handling",
+      "directory": "lessons/stage-18/lesson-04-approval-controls-and-exception-handling",
+      "brief": "Lesson 4 — Approval Controls and Exception Handling\nStage 18 — Human Oversight, Approvals, and Social Engineering of Operators\nObjective: Design an auditable approval gate that resists misleading agent narration.\nCore: Bind consent to actual tool arguments; expire approvals; require reapproval if target or content changes; define an escalation path for uncertain cases.\nPractice / evidence: Retest the misleading-summary case and demonstrate a clean authorized send to the mock outbox."
+    },
+    {
+      "order": 89,
+      "stage": 19,
+      "lesson": 1,
+      "title": "Simulation Fidelity and Limits",
+      "directory": "lessons/stage-19/lesson-01-simulation-fidelity-and-limits",
+      "brief": "Lesson 1 — Simulation Fidelity and Limits\nStage 19 — Simulated Environments and Adversarial Scenario Engineering\nObjective: Explain what a sandbox can and cannot establish about a production system.\nCore: Model authentic workflows, decisions, and tool constraints while clearly labeling mock integrations and omitted operational dependencies.\nPractice / evidence: Create a fidelity-and-limits note for HarborDesk."
+    },
+    {
+      "order": 90,
+      "stage": 19,
+      "lesson": 2,
+      "title": "Scenario Taxonomy and Coverage",
+      "directory": "lessons/stage-19/lesson-02-scenario-taxonomy-and-coverage",
+      "brief": "Lesson 2 — Scenario Taxonomy and Coverage\nStage 19 — Simulated Environments and Adversarial Scenario Engineering\nObjective: Cover entry surface, attacker control, target action, persistence, and number of agents.\nCore: Build a matrix spanning tickets, retrieval, memory, tools, registries, bus messages, and approval interfaces; include clean controls for every attack family.\nPractice / evidence: Identify coverage gaps and select four complementary scenarios."
+    },
+    {
+      "order": 91,
+      "stage": 19,
+      "lesson": 3,
+      "title": "Fixtures, Seeds, and Reset Semantics",
+      "directory": "lessons/stage-19/lesson-03-fixtures-seeds-and-reset-semantics",
+      "brief": "Lesson 3 — Fixtures, Seeds, and Reset Semantics\nStage 19 — Simulated Environments and Adversarial Scenario Engineering\nObjective: Ensure cases can be compared fairly.\nCore: Version initial records and KB, maintain immutable attack inputs, attach run IDs, and distinguish resetting ephemeral context from clearing persistent memory.\nPractice / evidence: Reproduce a prior attack result from a written fixture manifest."
+    },
+    {
+      "order": 92,
+      "stage": 19,
+      "lesson": 4,
+      "title": "Negative Cases and Adaptive Variants",
+      "directory": "lessons/stage-19/lesson-04-negative-cases-and-adaptive-variants",
+      "brief": "Lesson 4 — Negative Cases and Adaptive Variants\nStage 19 — Simulated Environments and Adversarial Scenario Engineering\nObjective: Test whether apparent defenses generalize.\nCore: Add benign lookalikes, altered wording, changed source locations, and withheld test variants. Avoid claiming universal security from one blocked phrase.\nPractice / evidence: Submit two benign controls and two meaning-preserving adversarial variants."
+    },
+    {
+      "order": 93,
+      "stage": 19,
+      "lesson": 5,
+      "title": "Package a Shareable Evaluation Pack",
+      "directory": "lessons/stage-19/lesson-05-package-a-shareable-evaluation-pack",
+      "brief": "Lesson 5 — Package a Shareable Evaluation Pack\nStage 19 — Simulated Environments and Adversarial Scenario Engineering\nObjective: Hand off scenarios so another authorized evaluator can rerun them.\nCore: Include scope, scenario cards, fixture versions, scoring rules, cleanup, expected benign behavior, and disclosure cautions.\nPractice / evidence: Exchange packs for peer replay and record any reproducibility failures."
+    },
+    {
+      "order": 94,
+      "stage": 20,
+      "lesson": 1,
+      "title": "Harness Architecture",
+      "directory": "lessons/stage-20/lesson-01-harness-architecture",
+      "brief": "Lesson 1 — Harness Architecture\nStage 20 — Evaluation Harness, Replay, and Evidence Collection\nObjective: Define inputs, executor, tools, trace collector, and scorer.\nCore: Each run loads a fixture, applies a controlled intervention, performs the legitimate task, records events, evaluates outcomes, and resets safely.\nPractice / evidence: Diagram harness stages and log dependencies."
+    },
+    {
+      "order": 95,
+      "stage": 20,
+      "lesson": 2,
+      "title": "Instrumentation and Event Schema",
+      "directory": "lessons/stage-20/lesson-02-instrumentation-and-event-schema",
+      "brief": "Lesson 2 — Instrumentation and Event Schema\nStage 20 — Evaluation Harness, Replay, and Evidence Collection\nObjective: Collect action-level evidence suitable for scoring.\nCore: Capture per-step source, proposed action, validated arguments, policy outcome, executed side effect, state diff, agent identity, and correlation ID.\nPractice / evidence: Create a minimal JSON event schema and validate a sample trace."
+    },
+    {
+      "order": 96,
+      "stage": 20,
+      "lesson": 3,
+      "title": "Build or Configure the Local Runner",
+      "directory": "lessons/stage-20/lesson-03-build-or-configure-the-local-runner",
+      "brief": "Lesson 3 — Build or Configure the Local Runner\nStage 20 — Evaluation Harness, Replay, and Evidence Collection\nObjective: Execute clean and adversarial cases through one repeatable interface.\nCore: Configure a runner to load versioned fixtures, attach a case ID, enforce time and step caps, save traces, and clean up. Tool choice is implementation-neutral; an equivalent documented harness is acceptable.\nPractice / evidence: Replay one ticket-injection case with the same scoring rules."
+    },
+    {
+      "order": 97,
+      "stage": 20,
+      "lesson": 4,
+      "title": "Deterministic Scorers and Review Flags",
+      "directory": "lessons/stage-20/lesson-04-deterministic-scorers-and-review-flags",
+      "brief": "Lesson 4 — Deterministic Scorers and Review Flags\nStage 20 — Evaluation Harness, Replay, and Evidence Collection\nObjective: Score observed state changes rather than just verbal responses.\nCore: Implement checks for unauthorized record updates, mock outbox entries, cross-scope memory writes, approval bypasses, and task completion; flag uncertain cases for manual review.\nPractice / evidence: Provide examples where 'attempted but blocked' and 'executed' produce different scores."
+    },
+    {
+      "order": 98,
+      "stage": 20,
+      "lesson": 5,
+      "title": "Repeat Trials and Triage",
+      "directory": "lessons/stage-20/lesson-05-repeat-trials-and-triage",
+      "brief": "Lesson 5 — Repeat Trials and Triage\nStage 20 — Evaluation Harness, Replay, and Evidence Collection\nObjective: Summarize variable outcomes without hiding important outliers.\nCore: Run repeated trials across a small scenario set; report numerator, denominator, configuration, inconclusive trials, and representative event chains.\nPractice / evidence: Deliver a short results table plus one fully auditable failure trace."
+    },
+    {
+      "order": 99,
+      "stage": 21,
+      "lesson": 1,
+      "title": "Define Outcome Classes",
+      "directory": "lessons/stage-21/lesson-01-define-outcome-classes",
+      "brief": "Lesson 1 — Define Outcome Classes\nStage 21 — Measuring Single-Turn Versus Cascading Failure\nObjective: Distinguish blocked attempt, answer contamination, executed unauthorized action, persistent state change, and downstream propagation.\nCore: Record each as a separate observable event. Do not collapse a suspicious instruction, a proposed tool call, and an executed side effect into 'attack succeeded.'\nPractice / evidence: Label ten short traces using the shared outcome taxonomy."
+    },
+    {
+      "order": 100,
+      "stage": 21,
+      "lesson": 2,
+      "title": "Utility and Targeted Attack Success",
+      "directory": "lessons/stage-21/lesson-02-utility-and-targeted-attack-success",
+      "brief": "Lesson 2 — Utility and Targeted Attack Success\nStage 21 — Measuring Single-Turn Versus Cascading Failure\nObjective: Compute outcome rates on explicitly specified tasks.\nCore: Use benign utility = successful legitimate tasks / clean tasks; utility under attack = legitimately completed tasks without adversarial side effects / attacked tasks; targeted attack success = attacked tasks meeting the specified attacker objective / attacked tasks. Report exact case mix and inconclusive runs separately.\nPractice / evidence: Calculate these metrics from a supplied small dataset."
+    },
+    {
+      "order": 101,
+      "stage": 21,
+      "lesson": 3,
+      "title": "Propagation and Cascade Metrics",
+      "directory": "lessons/stage-21/lesson-03-propagation-and-cascade-metrics",
+      "brief": "Lesson 3 — Propagation and Cascade Metrics\nStage 21 — Measuring Single-Turn Versus Cascading Failure\nObjective: Measure severity beyond a single bad turn.\nCore: Track first compromised step, number of subsequent affected decisions, distinct agents influenced, tool actions executed, sessions crossed, and time or steps to detection. Define cascade in advance: in this course, an initial compromise plus at least one consequential downstream propagation event.\nPractice / evidence: Score two traces and show why only one meets the cascade definition."
+    },
+    {
+      "order": 102,
+      "stage": 21,
+      "lesson": 4,
+      "title": "Paired Comparisons and Statistical Caution",
+      "directory": "lessons/stage-21/lesson-04-paired-comparisons-and-statistical-caution",
+      "brief": "Lesson 4 — Paired Comparisons and Statistical Caution\nStage 21 — Measuring Single-Turn Versus Cascading Failure\nObjective: Compare control, attacked, and defended runs fairly.\nCore: Maintain comparable fixtures and tasks; present counts alongside rates, repeated runs where feasible, and uncertainty when samples are small. Avoid equating a high refusal rate with security if useful tasks fail.\nPractice / evidence: Prepare a paired-results table with limitations."
+    },
+    {
+      "order": 103,
+      "stage": 21,
+      "lesson": 5,
+      "title": "Failure Analysis Workshop",
+      "directory": "lessons/stage-21/lesson-05-failure-analysis-workshop",
+      "brief": "Lesson 5 — Failure Analysis Workshop\nStage 21 — Measuring Single-Turn Versus Cascading Failure\nObjective: Turn metrics into an explanatory account of what failed.\nCore: Trace source → decision → attempted action → gateway outcome → state change → downstream effects. Rank root causes by their ability to prevent further propagation.\nPractice / evidence: Present one single-step case and one cascade case with evidence-backed conclusions."
+    },
+    {
+      "order": 104,
+      "stage": 22,
+      "lesson": 1,
+      "title": "Control Points by Layer",
+      "directory": "lessons/stage-22/lesson-01-control-points-by-layer",
+      "brief": "Lesson 1 — Control Points by Layer\nStage 22 — Mitigation Engineering and Purple-Team Validation\nObjective: Match mitigations to the layer they actually protect.\nCore: Contrast input provenance, retrieval governance, planner constraints, memory permissions, agent-message validation, tool gateway policy, sandbox limits, and operator review.\nPractice / evidence: Assign each previously observed failure to at least two independent control points."
+    },
+    {
+      "order": 105,
+      "stage": 22,
+      "lesson": 2,
+      "title": "Least Privilege and Action Mediation",
+      "directory": "lessons/stage-22/lesson-02-least-privilege-and-action-mediation",
+      "brief": "Lesson 2 — Least Privilege and Action Mediation\nStage 22 — Mitigation Engineering and Purple-Team Validation\nObjective: Enforce permissions outside untrusted natural-language content.\nCore: Limit tool availability by role and task; validate target and arguments at execution; require explicit approval for simulated side effects; reject stale or mismatched grants.\nPractice / evidence: Update the HarborDesk permission matrix and gateway tests."
+    },
+    {
+      "order": 106,
+      "stage": 22,
+      "lesson": 3,
+      "title": "State Hygiene and Cross-Agent Integrity",
+      "directory": "lessons/stage-22/lesson-03-state-hygiene-and-cross-agent-integrity",
+      "brief": "Lesson 3 — State Hygiene and Cross-Agent Integrity\nStage 22 — Mitigation Engineering and Purple-Team Validation\nObjective: Prevent poisoned material from gaining authority across sessions or agents.\nCore: Attach provenance to memories and retrieved results; control writers and readers; authenticate message envelopes; add expiry, quarantine, and rollback paths.\nPractice / evidence: Retest one persistence case and one forged-handoff case."
+    },
+    {
+      "order": 107,
+      "stage": 22,
+      "lesson": 4,
+      "title": "Adaptive Retests and Benign Controls",
+      "directory": "lessons/stage-22/lesson-04-adaptive-retests-and-benign-controls",
+      "brief": "Lesson 4 — Adaptive Retests and Benign Controls\nStage 22 — Mitigation Engineering and Purple-Team Validation\nObjective: Challenge controls beyond the exact attack string used to design them.\nCore: Hold out variants that alter phrasing, source location, and task context. Report whether the user task still completes; investigate false positives and bypasses.\nPractice / evidence: Submit four defended trials, including at least one benign control."
+    },
+    {
+      "order": 108,
+      "stage": 22,
+      "lesson": 5,
+      "title": "Regression Gates and Operational Ownership",
+      "directory": "lessons/stage-22/lesson-05-regression-gates-and-operational-ownership",
+      "brief": "Lesson 5 — Regression Gates and Operational Ownership\nStage 22 — Mitigation Engineering and Purple-Team Validation\nObjective: Convert discoveries into sustainable engineering practice.\nCore: Add scenario IDs to CI or scheduled evaluation, define thresholds and escalation, assign tool and memory owners, and specify tests triggered by policy, model, prompt, tool, or workflow changes.\nPractice / evidence: Produce a release-gate checklist and a short purple-team handoff memo."
+    },
+    {
+      "order": 109,
+      "stage": 23,
+      "lesson": 1,
+      "title": "Scope, Legitimate Task, and Hypothesis",
+      "directory": "lessons/stage-23/lesson-01-scope-legitimate-task-and-hypothesis",
+      "brief": "Lesson 1 — Scope, Legitimate Task, and Hypothesis\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Establish the exact assessed workflow and attacker control.\nCore: Choose a scenario combining at least three surfaces—for example retrieval, handoff, and memory—and state the authorized end state, attacker goal, policy invariants, and stop conditions.\nPractice / evidence: Submit a signed-off capstone scenario card and initial trust- boundary diagram."
+    },
+    {
+      "order": 110,
+      "stage": 23,
+      "lesson": 2,
+      "title": "Clean Baseline and Instrumentation Check",
+      "directory": "lessons/stage-23/lesson-02-clean-baseline-and-instrumentation-check",
+      "brief": "Lesson 2 — Clean Baseline and Instrumentation Check\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Confirm task utility and evidence capture before attacking.\nCore: Run the legitimate request with clean fixtures; verify user-visible resolution, appropriate approvals, tool arguments, trace continuity, and initial state snapshot.\nPractice / evidence: Save the baseline bundle and resolve missing telemetry before proceeding."
+    },
+    {
+      "order": 111,
+      "stage": 23,
+      "lesson": 3,
+      "title": "Attack Design and Controlled Execution",
+      "directory": "lessons/stage-23/lesson-03-attack-design-and-controlled-execution",
+      "brief": "Lesson 3 — Attack Design and Controlled Execution\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Test a multi-step red-team hypothesis in the isolated environment.\nCore: Apply permitted changes to the synthetic KB, ticket, or bus input. Observe whether a low-trust instruction affects planning, crosses an agent boundary, or changes durable state.\nPractice / evidence: Submit input diffs, full trace, proposed versus executed actions, and before/after state."
+    },
+    {
+      "order": 112,
+      "stage": 23,
+      "lesson": 4,
+      "title": "Root-Cause Investigation and Cascade Scoring",
+      "directory": "lessons/stage-23/lesson-04-root-cause-investigation-and-cascade-scoring",
+      "brief": "Lesson 4 — Root-Cause Investigation and Cascade Scoring\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Reconstruct the causal chain and distinguish first compromise from later propagation.\nCore: Identify all relevant decisions, policy checks, scope changes, and cross- session effects. If the attack is blocked, explain where and whether the legitimate task still succeeds.\nPractice / evidence: Produce an event timeline, outcome scores, an alternative- cause check, and a limitations statement."
+    },
+    {
+      "order": 113,
+      "stage": 23,
+      "lesson": 5,
+      "title": "Mitigation and Independent Retest",
+      "directory": "lessons/stage-23/lesson-05-mitigation-and-independent-retest",
+      "brief": "Lesson 5 — Mitigation and Independent Retest\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Demonstrate improvement with controls at appropriate layers.\nCore: Apply at least two independent fixes, then rerun the original case, a paraphrased or moved variant, and a clean authorized task. Compare action and utility measures.\nPractice / evidence: Deliver before/after traces and a regression test entry."
+    },
+    {
+      "order": 114,
+      "stage": 23,
+      "lesson": 6,
+      "title": "Capstone Briefing and Defense",
+      "directory": "lessons/stage-23/lesson-06-capstone-briefing-and-defense",
+      "brief": "Lesson 6 — Capstone Briefing and Defense\nStage 23 — End-to-End Capstone: HarborDesk Agentic Red Team\nObjective: Communicate technically sound findings to engineering and leadership audiences.\nCore: Present scope, evidence, severity rationale, uncertain points, mitigation owners, and a realistic retest schedule. Explicitly distinguish simulated outcomes from real-world impact.\nPractice / evidence: Submit a concise executive slide outline and detailed technical finding."
+    },
+    {
+      "order": 115,
+      "stage": 24,
+      "lesson": 1,
+      "title": "Write an Actionable Finding",
+      "directory": "lessons/stage-24/lesson-01-write-an-actionable-finding",
+      "brief": "Lesson 1 — Write an Actionable Finding\nStage 24 — Reporting, Responsible Practice, and Course Conclusion\nObjective: Express a verified failure without exaggeration.\nCore: Include title, affected workflow, permitted attacker control, prerequisite, reproduction steps inside the lab, observed result, expected invariant, evidence, impact, and limitations.\nPractice / evidence: Convert a capstone trace into one technical finding."
+    },
+    {
+      "order": 116,
+      "stage": 24,
+      "lesson": 2,
+      "title": "Executive Summary and Prioritization",
+      "directory": "lessons/stage-24/lesson-02-executive-summary-and-prioritization",
+      "brief": "Lesson 2 — Executive Summary and Prioritization\nStage 24 — Reporting, Responsible Practice, and Course Conclusion\nObjective: Communicate risk in terms of reachability, consequence, and control gaps.\nCore: Separate immediate containment, engineering remediation, and longer-term monitoring; note how the sandbox limits any claim about production exposure.\nPractice / evidence: Draft a one-page management summary and three prioritized actions."
+    },
+    {
+      "order": 117,
+      "stage": 24,
+      "lesson": 3,
+      "title": "Remediation Ownership and Verification Plan",
+      "directory": "lessons/stage-24/lesson-03-remediation-ownership-and-verification-plan",
+      "brief": "Lesson 3 — Remediation Ownership and Verification Plan\nStage 24 — Reporting, Responsible Practice, and Course Conclusion\nObjective: Give each proposed fix an owner and testable exit criterion.\nCore: Map controls to platform, agent, tool, identity, and security teams; include both malicious replay and benign utility checks after changes.\nPractice / evidence: Deliver a remediation tracker with evidence links, acceptance criteria, and retest conditions."
+    },
+    {
+      "order": 118,
+      "stage": 24,
+      "lesson": 4,
+      "title": "Final Knowledge and Portfolio Review",
+      "directory": "lessons/stage-24/lesson-04-final-knowledge-and-portfolio-review",
+      "brief": "Lesson 4 — Final Knowledge and Portfolio Review\nStage 24 — Reporting, Responsible Practice, and Course Conclusion\nObjective: Demonstrate independent command of the full assessment lifecycle.\nCore: Review boundaries, trace interpretation, action versus attempt, persistence, multi-agent propagation, safety, and metrics.\nPractice / evidence: Complete a scenario-based review and package the threat model, two earlier labs, and capstone results."
+    },
+    {
+      "order": 119,
+      "stage": 24,
+      "lesson": 5,
+      "title": "Conclusion and Professional Application",
+      "directory": "lessons/stage-24/lesson-05-conclusion-and-professional-application",
+      "brief": "Lesson 5 — Conclusion and Professional Application\nStage 24 — Reporting, Responsible Practice, and Course Conclusion\nObjective: Translate course methods into an authorized workplace evaluation plan.\nCore: Identify one candidate agent workflow, its approval owner, safe staging environment, scenario backlog, and proposed regression cadence; retain clear authorization boundaries.\nPractice / evidence: Submit a 30-day implementation plan and personal skills reflection."
+    }
+  ]
+}
